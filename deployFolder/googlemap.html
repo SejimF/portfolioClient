@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+
+        #input {
+            width: 100%;
+            border: 1px solid rgb(109, 108, 108);
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+    <!-- <script>
+                     function select() {
+                console.log("select");
+                
+            }
+         </script> -->
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="lat">
+        <input type="text" id="long">
+        <input type="text" id="input" name="address" placeholder="Start typing an address...">
+    </form>
+
+    <div id="map"></div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script>
+        // Inputs
+        var longInput = $("#long")[0];
+        var latInput = $("#lat")[0]; 
+        
+        // First starting position, can be changed on fly
+
+        var lat = 46.13678989999999;
+        var long = -60.19422399999996;
+
+        //  Setting long and lat to hidden input
+        longInput.value = long;
+        latInput.value = lat;
+
+        function initMap() {
+            myLatlng = new google.maps.LatLng(46.13678989999999, -60.19422399999996);
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 46.13678989999999,
+                    lng: -60.19422399999996
+                },
+
+                zoom: 13
+            });
+
+            console.log(google.maps);
+
+
+            var geocoder = new google.maps.Geocoder();
+
+
+
+            var input = $("#input")[0];
+
+
+            var autocomplete = new google.maps.places.Autocomplete(input);
+
+
+            autocomplete.bindTo('bounds', map);
+
+            // Set the data fields to return when the user selects a place.
+            autocomplete.setFields(
+                ['geometry']);
+
+            var infowindow = new google.maps.InfoWindow();
+            var infowindowContent = document.getElementById('infowindow-content');
+            infowindow.setContent(infowindowContent);
+            var marker = new google.maps.Marker({
+                map: map,
+                center: new google.maps.Point(0, -29),
+                animation: google.maps.Animation.DROP
+            });
+
+
+            marker.setPosition(myLatlng);
+
+            autocomplete.addListener('place_changed', function () {
+                infowindow.close();
+                marker.setVisible(false);
+                var place = autocomplete.getPlace();
+                if (!place.geometry) {
+
+                    window.alert("No details available for input: '" + place.name + "'");
+                    return;
+                }
+
+                if (place.geometry.viewport) {
+                    map.fitBounds(place.geometry.viewport);
+                } else {
+                    map.setCenter(place.geometry.location);
+                    map.setZoom(17);
+                }
+                marker.setPosition(place.geometry.location);
+                marker.setVisible(true);
+
+                document.getElementById("long").value = place.geometry.location.lng();
+                document.getElementById("lat").value = place.geometry.location.lat();
+
+
+            });
+
+            map.addListener('click', function(event) {
+                marker.setMap(null);
+                longInput.value = event.latLng.lng();
+                latInput.value  = event.latLng.lat();
+                geocodeLatLng(geocoder,event.latLng.lng(), event.latLng.lat(), input);
+                addMarker(event.latLng);
+        });
+
+
+
+function addMarker(location) {
+        marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+        }
+
+
+        function geocodeLatLng(geocoder, lat, lng, input) {
+        var latlng = {lat: lat, lng: lng};
+
+        $.ajax({
+        url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lng + "," +lat + "&key=AIzaSyBxFRd0NZGfovfcsv4he0R1m2Xl2KuwZ1U",
+        // data: {
+        //     latlng: lat + "," + lng,
+        //         key: "AIzaSyBxFRd0NZGfovfcsv4he0R1m2Xl2KuwZ1U"
+        // },
+        type: "GET",
+        success: function(result) {
+            console.log("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lng + "," +lat + "&key=AIzaSyBxFRd0NZGfovfcsv4he0R1m2Xl2KuwZ1U");
+                console.log(result.results[0].address_components[0]);
+                console.log("result");
+        },
+        error: function(error) {
+            console.log("Error")
+        },
+
+    });
+
+      }
+
+
+        //   function codeAddress(geocoder, map, lo) {
+        //     var address = document.getElementById('input').value;
+        //     geocoder.geocode( { 'address': address}, function(results, status) {
+        //       if (status == 'OK') {
+        //         map.setCenter(results[0].geometry.location);
+        //         var marker = new google.maps.Marker({
+        //             map: map,
+        //             position: results[0].geometry.location
+        //         });
+        //       } else {
+        //         alert('Geocode was not successful for the following reason: ' + status);
+        //       }
+        //     });
+        //   }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxFRd0NZGfovfcsv4he0R1m2Xl2KuwZ1U&callback=initMap&libraries=places">
+    </script>
+</body>
+
+</html>

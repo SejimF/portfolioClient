@@ -1,0 +1,74 @@
+
+// main colors
+$background_fallback: black;
+$background_gradient: #d4f0fc;
+
+// text
+$section_color: #383838;
+$section_color: #383838;
+
+// head and footer background color
+$header-background: url("../../public/background-noises/header_noise.jpg") bottom center repeat;
+$second_background-color:  url("../../public/background-noises/main-second-noise.png") bottom center repeat;
+$third_background-color:  url("../../public/background-noises/third_background-noise.png") bottom center repeat;
+$footer_background-color:  url("../../public/background-noises/footer-noise.png") bottom center repeat;
+// $head_gamburg-tabs-color: #10617a;
+
+// $header_mobile-nav: linear-gradient(#973a3a, #bbda53);
+// $header_mobile-nav-hover: linear-gradient(rgb(58, 64, 151), rgb(83, 218, 205));
+// $header_mobile-nav-activated: linear-gradient(rgb(111, 233, 116), rgb(222, 79, 161));
+
+// // nav select
+// $select_background-color: linear-gradient(rgb(151, 58, 58), rgb(187, 218, 83));
+// $select_option-not-checked-background-color:#a6cccb;
+// $select_option-not-checked-color: #a17b5a;
+// $select_option-checked-background-color: #6aa8a6;
+// $select_option-checked-color: #bbda53;
+
+// // IE11 nav colors
+$header_mobile-nav-ie: #972662;
+$header_mobile-nav-hover-ie:rgb(96, 104, 214);
+$header_mobile-nav-activated-ie: rgba(232, 109, 169, 1);
+
+// $select-color: #bbda53;
+
+// cookies background
+$cookies_background: #090979;
+
+// // drop down menu
+// $background-dropDown-menu-color: rgba(63, 174, 190, 0.22);
+// $background-dropDown-border-color: linear-gradient(to bottom, #a7cdcc, orange) 1;
+
+
+// skills colors
+
+$skill_level-color: #bd4a3d;
+$skil_name-color: #bdaa3d;
+$skill_section-color: #b34538;
+
+
+// project list colors
+$proj_background-color: #ffffff;
+$proj_header-color: #383838;
+$proj_text-color: #ffffff;
+$proj_link-color: #106179;
+$proj_smoke-color: linear-gradient(to top, #f6f6f6, #ffffff21);
+
+
+// contact us colors
+$contactUs_background-color:  #ffffff;
+$contactUs_form-background-color: url("../../public/background-noises/main-second-noise.png") bottom center repeat;
+$invalid_input-border-color: #9c2fa5;
+$valid_input-border-color: #2f93a5;
+$contactUsText-color: #383838;
+
+$error-color: #9c2fa5;
+
+// button 
+$button_background_fallback-color: #bdaa3d;
+$button_background-color: linear-gradient(to bottom, #bdaa3d 5%, #96862f 100%);
+$button_background-hover-color: linear-gradient(to bottom, #96862f 5%, #bdaa3d 100%);
+$button_shadow-color: #c5b34a;
+$button-border-color: #8a7c31;
+$button_text-color: #ffffff;
+$text_shadow-color: #96862f;

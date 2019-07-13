@@ -1,0 +1,150 @@
+
+
+
+
+
+
+/* .Logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1470px;
+    height: 5560px;
+    z-index: 311;
+  }
+  .Discover_ {
+    font-size: 24px;
+    font-family: "Merriweather";
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    line-height: 0.792;
+    text-align: left;
+    -moz-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -webkit-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -ms-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    position: absolute;
+    left: 89.152px;
+    top: 46.996px;
+    z-index: 310;
+  }
+  .Greece {
+    font-size: 24px;
+    font-family: "Merriweather";
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    line-height: 0.792;
+    text-align: right;
+    -moz-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -webkit-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -ms-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    position: absolute;
+    left: 283.617px;
+    top: 47.496px;
+    z-index: 309;
+  } */
+  
+
+  .Top_Menu_alt {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1470px;
+    height: 5560px;
+    z-index: 317;
+  }
+  .Home_____Destinations_____Blog_____Contact {
+    font-size: 13.757px;
+    font-family: "Lato";
+    color: rgb(204, 204, 204);
+    text-transform: uppercase;
+    line-height: 1.429;
+    text-align: right;
+    -moz-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -webkit-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -ms-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    position: absolute;
+    left: 948.984px;
+    top: 48.671px;
+    z-index: 316;
+  }
+  .CTA_btn {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1470px;
+    height: 5560px;
+    z-index: 315;
+  }
+  .Book_now {
+    font-size: 13.757px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.381;
+    text-align: left;
+    -moz-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -webkit-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -ms-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    position: absolute;
+    left: 1287.637px;
+    top: 49.001px;
+    z-index: 314;
+  }
+  .Book_now_btn_bg {
+    border-radius: 5px;
+    background-color: rgb(18, 137, 213);
+    position: absolute;
+    left: 1255px;
+    top: 37px;
+    width: 135px;
+    height: 42px;
+    z-index: 313;
+  }
+  .Logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1470px;
+    height: 5560px;
+    z-index: 311;
+  }
+  .Discover_ {
+    font-size: 24px;
+    font-family: "Merriweather";
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    line-height: 0.792;
+    text-align: left;
+    -moz-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -webkit-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -ms-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    position: absolute;
+    left: 89.152px;
+    top: 46.996px;
+    z-index: 310;
+  }
+  .Greece {
+    font-size: 24px;
+    font-family: "Merriweather";
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    line-height: 0.792;
+    text-align: right;
+    -moz-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -webkit-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    -ms-transform: matrix( 0.9983692466616,0,0,1.0176397515528,0,0);
+    position: absolute;
+    left: 283.617px;
+    top: 47.496px;
+    z-index: 309;
+  }
+  .Top_menu_bg {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1470px;
+    height: 116px;
+    z-index: 306;
+  }
+  

@@ -1,0 +1,145 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  font-family: 'Lato', sans-serif; }
+  .packages > h2 {
+    font-size: 2.353rem;
+    letter-spacing: 1px;
+    line-height: 19px;
+    color: #fdd687;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center; }
+  .packages p {
+    font-size: 0.9412rem;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Merriweather";
+    text-align: center; }
+
+.package {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 250px;
+  margin-bottom: 5rem; }
+
+.package_type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  background: #fff; }
+  .package_type h3 {
+    font-size: 1.118rem;
+    line-height: 19px;
+    color: #fcd890;
+    font-family: "Lato";
+    font-weight: 600;
+    text-align: center; }
+  .package_type p {
+    width: 80%;
+    text-align: center;
+    font-size: 0.8235rem;
+    line-height: 21px;
+    color: #999999;
+    font-family: "Merriweather";
+    text-align: center; }
+
+.package_type--image {
+  width: 40px; }
+  .package_type--image img {
+    width: 100%; }
+
+.place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%; }
+  .place h2 {
+    font-size: 0.9412rem;
+    line-height: 19px;
+    color: #1289d5;
+    font-family: "Lato";
+    font-weight: 600;
+    text-align: center; }
+  .place p {
+    margin-left: .5rem;
+    font-size: 0.8235rem;
+    line-height: 21px;
+    color: #7e7e7e;
+    font-family: "Merriweather";
+    text-align: center; }
+
+.place_info--icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  width: 80%;
+  font-size: 0.7647rem;
+  line-height: 21px;
+  color: #7e7e7e;
+  font-family: "Lato";
+  font-weight: 400; }
+  .place_info--icons span {
+    margin: 0 1rem; }
+  .place_info--icons i {
+    width: 20px;
+    height: 20px;
+    text-align: center; }
+
+.package_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  background: #fff; }
+  .package_button button {
+    font-size: 0.8235rem; }
+  .package_button span {
+    font-size: 0.8235rem;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Lato";
+    font-weight: 700; }
+  .package_button a {
+    font-size: 0.8235rem;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #fed27a;
+    font-family: "Lato";
+    font-weight: 800;
+    text-align: center; }
+    .package_button a:hover {
+      color: #c78a27; }
+    .package_button a:active {
+      text-decoration: none; }
+
+@media screen and (max-width: 900px) {
+  .package {
+    flex-direction: column;
+    width: 90%;
+    height: auto; }
+  .package_type {
+    width: 80%; }
+  .place {
+    width: 80%; }
+  .place_info--icons {
+    align-items: center; }
+  .package_button {
+    width: 80%;
+    padding: .5rem 0; } }

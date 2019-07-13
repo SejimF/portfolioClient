@@ -1,0 +1,173 @@
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    /* overflow: hidden; */
+}
+
+html::-webkit-scrollbar { 
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background: $background_fallback;
+    background: $background_gradient;
+    z-index: 0;
+}
+
+footer {
+    display: flex;
+}
+
+.section {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+
+.top_section {
+    background: $header-background;
+    min-height: 700px;
+    padding-top: 100px;
+}
+
+.second_section {
+    background: $second_background-color;
+}
+
+.third_section {
+    background: $third_background-color;
+}
+
+.section_name {
+    font-size: $font-size-big;
+    color: $section_color;
+}
+
+.block-scroll {
+    overflow-y: hidden;
+}
+
+.cookies {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background: $header-background;
+    z-index: 1000;
+    text-align: center;
+    font-size: $font-size-small;
+    color: $section_color;
+    box-shadow: 1px -1px 10px 0px black;
+}
+
+#cookiesNotification {
+    font-size: 1rem;
+}
+
+ @media screen and (min-width: 760px) { 
+    .loading img {
+        width: 10%;
+    }
+
+ }
+
+ @media screen and (min-width: 1440px) { 
+    .section_name {
+        font-size: $font-size-big + 1rem;
+    }
+    .cookies {
+
+        font-size: $font-size-small + .5rem;
+    }
+  }
+
+  @media screen and (min-width: 2560px) { 
+    .section_name {
+        font-size: $font-size-big + 1rem;
+    }
+    .cookies {
+
+        font-size: $font-size-small + 1.5rem;
+    }
+  }
+
+ /* INTERNET EXPLORER STYLES */
+
+//  @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+
+//     .section_name {
+//         font-size: 1rem;
+//     }
+
+//     .cookies {
+//         font-size: 1rem;
+//     }
+//     }
+
+// @media screen and (min-width: 360px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+//     .section_name {
+//         font-size: 1.5rem;
+//     }
+
+//     .cookies {
+//         font-size: 1.5rem;
+//     }
+//     }
+
+// @media screen and (min-width: 1440px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+// .section_name { 
+//     font-size: 2rem;
+// }
+
+// .cookies {
+//     font-size: 2rem;
+// }
+// }
+
+// @media screen and (min-width: 2560px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+//     .section_name {
+//         font-size: 5rem;
+//     }
+
+//     .cookies {
+//         font-size: 5rem;
+//     }
+//     }
+
+
+/* 
+
+                IE COPY PASTE HELP
+
+    @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+
+ 
+        }
+    
+    @media screen and (min-width: 360px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+ 
+        }
+    
+    @media screen and (min-width: 1440px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+ 
+    }
+    
+    @media screen and (min-width: 2560px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ 
+        }
+
+         */

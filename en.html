@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Portfolio | Kolodko Maxim | web-programming!</title>
+
+    <meta name="description"
+        content="Hello every one! I am front-end and back-end web-developer, languages i speak is HTML | CSS | SASS | JAVASCRIPT| ANGULAR 2.">
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Portfolio | Kolodko Maxim | web-programming!" />
+
+    <meta property="og:description"
+        content="Hello every one! I am front-end and back-end web-developer, languages i speak is HTML | CSS | SASS | JAVASCRIPT| ANGULAR 2." />
+
+    <meta property="og:image" content="https://kmaximdev.tk/public/meta-image/meta-image-eng.png" />
+
+    <meta property="og:url" content="https://kmaximdev.tk/en.html" />
+
+    <meta property="og:site_name" content="K.Maxim Dev" />
+
+    <meta property="fb:app_id" content="597853417401566" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#5318af" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5318af">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5318af">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/public/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../css/aboweFold.min.css">
+</head>
+
+<body class="preload ">
+    <!-- <div class="loading">
+        <img src="./public/loaders/Bars-0.7s-200px.svg" alt="">
+        <h2 class="loading_info">Counting elements...</h2>
+    </div> -->
+
+    <nav id="nav">
+        <div class="header_logo">
+            <img src="../public/logo.png" alt="logo">
+        </div>
+
+        <div class="header_image"><img src="../public/header_face.jpg" alt="avatar"></div>
+
+        <ul class="nav-list nav_list-big--screen">
+            <li class="aboutMeLI activeted"><a class="aboutMeLink" href="#myNameSection"
+                    onclick="switchDropDownMenu()">About Me</a></li>
+            <li class="mySkillsLI"><a class="mySkillsLink" href="#mySkillsSection" onclick="switchDropDownMenu()">My
+                    Skills</a></li>
+            <li class="myProjectsLI"><a class="myProjectsLink" href="#projects" onclick="switchDropDownMenu()">My
+                    Projects</a></li>
+            <li class="myContactsLI"><a class="myContactsLink" href="#contacts" onclick="switchDropDownMenu()">My
+                    Contacts</a></li>
+            <select onchange="setLanguage(this.value)">
+                <option id="langChoice">Choose language</option>
+                <option id="langEn" value="en">English</option>
+                <option id="langRu" value="ru">Russian</option>
+                <option id="langGr" value="gr">Greek</option>
+            </select>
+        </ul>
+
+        <div id="gamburger">
+            <span class="nav_bar--first"></span>
+            <span class="nav_bar--middle"></span>
+            <span class="nav_bar--last"></span>
+        </div>
+    </nav>
+    <div id="block-shadow"></div>
+    <div id="dropDownNav">
+        <ul class="nav-list">
+            <li class="aboutMeLI activeted">
+                <a class="aboutMeLink" href="#myNameSection" onclick="switchDropDownMenu()">About Me</a>
+            </li>
+            <li class="mySkillsLI">
+                <a class="mySkillsLink" href="#mySkillsSection" onclick="switchDropDownMenu()">My Skills</a>
+            </li>
+            <li class="myProjectsLI">
+                <a class="myProjectsLink" href="#projects" onclick="switchDropDownMenu()">My Project</a>
+            </li>
+            <li class="myContactsLI">
+                <a class="myContactsLink" href="#contacts" onclick="switchDropDownMenu()">My Contacts</a>
+            </li>
+            <select onchange="setLanguage(this.value)">
+                <option id="langChoice">Choose Language</option>
+                <option id="langEn" value="en">English</option>
+                <option id="langRu" value="ru">Russian</option>
+                <option id="langGr" value="gr">Greek</option>
+            </select>
+        </ul>
+    </div>
+
+    <main>
+        <div id="myNameSection"></div>
+        <section class="section top_section">
+<!--  style="height: 300px;" -->
+            <div class="images-carousel">
+                <div class="carousel-image-container prev-image">
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="../public/imageGallery/atFactory-700w.jpg" alt="Me whith a snake!">
+                </div>
+
+                <div class="carousel-image-container current-image">
+                    <img src="../public/imageGallery/blackAndWhite-700w.jpg" alt="Me whith a snake!">
+                </div>
+                <div class="carousel-image-container next-image">
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="../public/imageGallery/withSnake-700w.jpg" alt="Me whith a snake!">
+                </div>
+                <span class="arrows left-arrow" onclick="moveToSelected('prev')"></span>
+                <span class="arrows right-arrow" onclick="moveToSelected('next')"></span>
+            </div>
+            <div class="about-me">
+                <h2 id="aboutMeHeader" class="section_name">Hello Everyone!</h2>
+                <p id="aboutMeDescription">I'm software developer! And making my way through these interesting and
+                    beautiful world of developing web sites. I'll help you make your web site become true or be a good
+                    member in you team!</p>
+                <span id="signature">Kolodko Maxim</span>
+            </div>
+        </section>
+
+        <section class="section second_section">
+
+            <div id="mySkillsSection"></div>
+            <h1 id="mySkills" class="section_name"></h1>
+            <ul>
+                <li>
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="./public/mySkillsImages/neonbrand-635850-unsplash_smaller.jpg" alt="">
+                    <h3 id="problem_solving--header">
+                        </h1>
+                        <p id="problem_solving--paragraph"></p>
+                        <br>
+                </li>
+                <li>
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="./public/mySkillsImages/joshua-ness-225844-unsplash.jpg" alt="">
+                    <h3 id="comunication--header">
+                        </h1>
+                        <p id="comunication--paragraph"></p>
+                        <br>
+                </li>
+                <li>
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="./public/mySkillsImages/felipe-furtado-678938-unsplash.jpg" alt="">
+                    <h3 id="organised--header">
+                        </h1>
+                        <p id="organised--paragraph"></p>
+                        <br>
+                </li>
+
+            </ul>
+            <div class="skills">
+                <div class="skills_name">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Angular</p>
+                    <p>NodeJS</p>
+                    <p>MongoDB/Mongoose</p>
+                </div>
+                <div class="skills_state">
+                    <p id="html"> </p>
+                    <p id="css"> </p>
+                    <p id="javaScript"></p>
+                    <p id="angular"> </p>
+                    <p id="nodeJS"> </p>
+                    <p id="mongoDB"> </p>
+                </div>
+            </div>
+        </section>
+        <!-- start -->
+        <section class="section third_section">
+            <h1 id="myProjects" class="section_name"></h1>
+            <div id="projects"></div>
+        </section>
+
+        <div class="contact"></div>
+        <div class="contacts_us-button wobble">
+            <div class="contact_us--image"></div>
+        </div>
+        <div class="contacts_us">
+            <div class="contacts_us--form">
+                <form id="formContainer" target="hiddenFrame" onsubmit="sendEmail();">
+                    <h2 id="contact_me--header">Send me a message</h2>
+                    <label for="name"></label>
+                    <input id="contact_me-input--name" class="input" type="text" name="name" required>
+                    <label for="email"></label>
+                    <input id="contact_me-input--email" class="input" type="email" name="email" required>
+                    <label for="subject"></label>
+                    <input id="contact_me-input--subject" class="input" type="text" name="subject" required>
+
+                    <input id="contact_me-input--lang" type="hidden" name="lang">
+                    <label for="message"></label>
+                    <textarea id="contact_me-input--message" class="input" name="message" cols="15" rows="5" required
+                        minlength="5"></textarea>
+                    <div class="g-recaptcha" data-sitekey="6Lf3IaEUAAAAACPqr4sd88AG_YF6g17S9-lX1CCr"></div>
+                    <p id="error">You need to pass google captcha! </p>
+                    <button type="submit" id="contact_me-input--button">Send me you're message</button>
+                </form>
+                <div class="sendingEmail">
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="./public/loaders/Bars-0.7s-200px.svg" alt="">
+                </div>
+                <div id="afterSubmit">
+                    <h2></h2>
+                    <p></p>
+                    <button class="afterSubmitButton">Try again</button>
+                </div>
+                <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+            </div>
+        </div>
+        <div class="cookies">
+            <p id="cookiesNotification"></p>
+            <button id="cookiesButton" onclick="acceptCookies()"></button>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div id="contacts" class="contacts">
+            <h2 id="findMeHere"></h2>
+            <div class="my_contacts">
+                <a target="_blank" href="https://vk.com/kolodkomaxim"><i class="icon fab fa-vk"></i></a>
+                <a target="_blank" href="https://web.facebook.com/kolodko.maksim"><i
+                        class="icon fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://github.com/SejimF"><i class="icon fab fa-github"></i></a>
+            </div>
+            <p id="madeBy"></p>
+        </div>
+    </footer>
+
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1327746524051161"
+  logged_in_greeting="Hi! Ask what are you want to know about my skills!"
+  logged_out_greeting="Hi! Login please to ask what interests you!">
+</div>
+    <script>
+                setTimeout(function () {
+                    document.querySelector(".images-carousel").style.height  = document.querySelector(".current-image > img").height + "px";
+                }, 100);
+    </script>
+
+<script src="./scripts/enStartScript.js"></script>
+
+</body>
+
+
+</html>

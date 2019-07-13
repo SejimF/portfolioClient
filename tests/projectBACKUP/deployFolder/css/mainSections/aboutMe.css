@@ -1,0 +1,30 @@
+@import "../variables/fonts.css";
+
+.about-me {
+    color: white;
+    /* font-family: var(--main-font); */
+    font-size: var(--font-size-small);
+}
+
+.about-me > h2 {
+    text-align: center;
+}
+
+.about-me > p {
+    margin: 0 1rem;
+}
+
+#signature {
+    float: right;
+    margin-right: 1rem;
+}
+
+/* margin: 0 1rem; */
+
+@media screen and (min-width: 760px) { 
+
+    .about-me {
+        width: 90%;
+    }
+    
+      }

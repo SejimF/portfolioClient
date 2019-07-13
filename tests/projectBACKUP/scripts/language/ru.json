@@ -1,0 +1,57 @@
+{
+    "meta":{
+        "imgUrl":"/public/meta-image/meta-image-rus.png"
+    },
+    "forOfor": {
+        "haventMade": "Я не сделал такую страницу... Извини",
+        "linkTitle": "Попробуйте сново"
+    },
+    "header": {
+        "aboutMe":"Обо мне",
+        "mySkills":"Мои Знания",
+        "myProjects":"Мои Проекты",
+        "myContacts":"Мои Контакты",
+        "langChoice": "Выберете язык",
+        "langEn": "Английский",
+        "langRu": "Русский",
+        "langGr": "Греческий"
+    },
+    "greeting": "../../public/myNameIS/myNameISKolodkoMaxim_RU.svg",
+
+    "aboutMe": {
+        "header": "Я новенький здесь!",
+        "description": "Я начинающий веб-разработчик! И пытаюсь пробраться через этот интересный и красивый мир разработки веб-сайтов. Я помогу вам сделать ваш сайт или стать хорошим членом вашей команды!",
+        "signature": "Колодько Максим"
+    },
+
+    "skillsHeader": "Мои Знания",
+    "projectsHeader": "Мои Проекты",
+    
+    "projects": [
+        {"project_name": "Давай пробежим",  "project_image_path": "../../public/projects/let-run.png", "project_desc": "Социальные сети для любителей бега, для использовать на смартфонах, планшетах и ​​компьютерах. Давай пробежимся - позволяет пользователям публиковать ожидаемые события, присоединяться к событиям, оставлять комментарии, добавлять в избранное, а также имеет встроенный форум.", "project_url": "https://let-run-today.tk/"},
+        {"project_name": "Змеи Ромы",      "project_image_path": "../../public/projects/snakes.png", "project_desc": "Простой responsive сайт про змей для одного моего друга, есть главная страница и галерея", "project_url": "https://snakeroman-97950.firebaseapp.com/"}
+    ],
+    "projectsLink": "Перейти на сайт!",
+    
+    "sendMeAMessageForm":{
+        "sendMeAMessageHeader": "Отправьте мне письмо",
+        "receiveNotification":"Вы получите подтверждающее письмо",
+        "label":{
+            "name":"Напишите ваше имя:",
+            "email":"Напишите вашу почта:",
+            "subject":"Напишите вашу тема:",
+            "message":"Напишите ваше письмо:"
+        },
+        "name":"Колодько Максим",
+        "email":"primer@email.ru",
+        "subject":"Ваша тема",
+        "message":"ваше письмо",
+        "buttonMessage":"Отправить письмо"
+    },
+
+
+    "footer": {
+        "mySocial":"Меня можно найти здесь!",
+        "madeBy":"Сделано Колодько Максимом!"
+    }
+}

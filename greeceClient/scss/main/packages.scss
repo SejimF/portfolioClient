@@ -1,0 +1,179 @@
+@import "../_mixins.scss";
+// @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap');
+
+.packages {
+    @include flexCol;
+
+    background: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+    > h2 {
+        font-size: 2.353rem;
+        letter-spacing: 1px;
+        line-height: 19px;
+        color: #fdd687;
+        font-family: "Lato";
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.9412rem;
+        line-height: 24px;
+        color: #999999;
+        font-family: "Merriweather";
+        text-align: center;
+    }
+}
+
+.package {
+    @include flexRow;
+    width: 90%;
+    height: 250px;
+    margin-bottom: 5rem;
+}
+
+.package_type {
+    @include flexCol;
+
+    height: 100%;
+    width: 20%;
+    background: #fff;
+
+    h3 {
+        font-size: 1.118rem;
+        line-height: 19px;
+        color: #fcd890;
+        font-family: "Lato";
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        width: 80%;
+        text-align: center;
+        font-size: 0.8235rem;
+        line-height: 21px;
+        color: #999999;
+        font-family: "Merriweather";
+        text-align: center;
+    }
+}
+
+.package_type--image {
+    width: 40px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.place {
+    @include flexCol;
+    width: 20%;
+    height: 100%;
+
+    h2 {
+        font-size: 0.9412rem;
+        line-height: 19px;
+        color: #1289d5;
+        font-family: "Lato";
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        margin-left: .5rem;
+        font-size: 0.8235rem;
+        line-height: 21px;
+        color: #7e7e7e;
+        font-family: "Merriweather";
+        text-align: center;
+    }
+}
+
+.place_info--icons {
+    @include flexCol;
+
+    align-items: baseline;
+    width: 80%;
+
+    font-size: 0.7647rem;
+    line-height: 21px;
+    color: #7e7e7e;
+    font-family: "Lato";
+    font-weight: 400;
+
+    span {
+        margin: 0 1rem;
+    }
+
+    i {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+    }
+}
+
+.package_button {
+    @include flexCol;
+    width: 20%;
+    height: 100%;
+    background: #fff;
+
+    button {
+        font-size: 0.8235rem;
+    }
+
+    span {
+        font-size: 0.8235rem;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #999999;
+        font-family: "Lato";
+        font-weight: 700;
+    }
+
+    a {
+        font-size: 0.8235rem;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #fed27a;
+        font-family: "Lato";
+        font-weight: 800;
+        text-align: center;
+
+        &:hover {
+            color: #c78a27;
+        }
+
+        &:active {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) { 
+
+    .package {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .package_type {
+        width: 80%;
+    }
+
+    .place {
+        width: 80%;
+    }
+
+    .place_info--icons {
+        align-items: center;
+    }
+
+    .package_button {
+        width: 80%;
+        padding: .5rem 0;
+    }
+}

@@ -1,0 +1,56 @@
+{   
+     "meta":{
+    "imgUrl":"/public/meta-image/meta-image-gr.png"
+    },
+    "forOfor": {
+        "haventMade": "Δεν έκανα αυτή τη σελίδα ακομη... συγγνώμη",
+        "linkTitle": "Προσπάθησε ξανά"
+    },
+    "header": {
+        "aboutMe":"Ποιος Ειμαι",
+        "mySkills":"Οι γνωσεις μου",
+        "myProjects":"Τα έργα μου",
+        "myContacts":"Επαφές",
+        "langChoice": "Επιλέξτε γλώσσα",
+        "langEn": "Αγγλικά",
+        "langRu": "Ρωσική",
+        "langGr": "Ελληνικά"
+    },
+    "greeting": "../../public/myNameIS/myNameISKolodkoMaxim_GR.svg",
+
+    "aboutMe": {
+        "header": "Γειά σας!",
+        "description": "Είμαι αρχάριος web developer! Και προσπαθώ να κάνω το δρόμο μου σε αυτόν τον ενδιαφέρον και όμορφο κόσμο της ανάπτυξης ιστοσελίδων και προγραματον. Θα σας βοηθήσω να φτιάξετε την ιστοσελίδα σας ή να  ειμαι καλός μέλος της ομάδας σας!",
+        "signature": "Κολοντκο Μαξιμ"
+    },
+
+    "skillsHeader": "Οι γνωσεις μου",
+    "projectsHeader": "Τα έργα μου",
+    
+    "projects": [
+        {"project_name": "Let Run",  "project_image_path": "../../public/projects/let-run.png", "project_desc": "Social media για δρομείς, το οποίο μπορεί να χρησιμοποιηθεί σε κινητό τηλέφωνο, σε tablet και σε προσωπικό υπολογιστή. Το Let-run επιτρέπει στους χρήστες να δημοσιεύουν τρέχοντα γεγονότα για να συμμετέχουν σε εκδηλώσεις, να αφήνουν σχόλια, να προσθέτουν στα αγαπημένα και επίσης έχη ένα ενσωματωμένο φόρουμ.", "project_url": "https://let-run-today.tk/"},
+        {"project_name": "Roman snakes",      "project_image_path": "../../public/projects/snakes.png", "project_desc": "Απλή ιστοσελίδα για τα φίδια έναν φίλο μου, έχει την κύρια σελίδα και τη γκαλερί.", "project_url": "https://snakeroman-97950.firebaseapp.com/"}
+    ],
+    "projectsLink": "Δείτε την ιστοσελίδα!",
+    "sendMeAMessageForm":{
+        "sendMeAMessageHeader": "Στείλτε μου μήνυμα",
+        "receiveNotification":"Θα λάβετε ένα μήνυμα επιβεβαίωσης!",
+        "label":{
+            "name":"Γράψτε το όνομα σας:",
+            "email":"Γράψτε το email σας:",
+            "subject":"Γράψτε το θέμα σας:",
+            "message":"Γράψτε το μήνυμά σας:"
+        },
+        "name":"Κολοντκο Μαξιμ",
+        "email":"παράδειγμα@email.gr",
+        "subject":"Το θέμα σας",
+        "message":"Το μήνυμά σας",
+        "buttonMessage":"Στείλτε μου μήνυμα"
+    },
+
+
+    "footer": {
+        "mySocial":"Μπορείτε να με βρείτε εδώ",
+        "madeBy":"Έκανε Κολοντκο Μαξιμ"
+    }
+}
