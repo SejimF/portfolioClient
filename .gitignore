@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
+
+
+
 # Firebase cache
 .firebase/
 
@@ -46,6 +49,11 @@ build/Release
 # Dependency directories
 node_modules/
 
+# folders 
+deployFolder/
+out/
+test/
+
 # Optional npm cache directory
 .npm
 
@@ -63,3 +71,4 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
