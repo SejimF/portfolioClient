@@ -72,3 +72,4 @@ test/
 # dotenv environment variables file
 .env
 
+# js files
