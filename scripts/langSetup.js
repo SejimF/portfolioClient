@@ -96,10 +96,21 @@ $("#contact_me--header").text(language.sendMeAMessageForm.sendMeAMessageHeader);
 
 // label
 
-$("label[for='name']")[0].append(language.sendMeAMessageForm.label.name);
-$("label[for='email']")[0].append(language.sendMeAMessageForm.label.email);
-$("label[for='subject']")[0].append(language.sendMeAMessageForm.label.subject);
-$("label[for='message']")[0].append(language.sendMeAMessageForm.label.message);
+if($("label[for='name']")[0]) {
+    $("label[for='name']")[0].append(language.sendMeAMessageForm.label.name);
+    $("label[for='email']")[0].append(language.sendMeAMessageForm.label.email);
+    $("label[for='subject']")[0].append(language.sendMeAMessageForm.label.subject);
+    $("label[for='message']")[0].append(language.sendMeAMessageForm.label.message);    
+
+      //  CHECK IF COOKIES HAVE BEEN ACCEPTED
+
+  if (localStorage.getItem('cookies') == "accepted") {
+    $(".cookies")[0].style.display = "none";
+} else {
+  $(".cookies")[0].style.display = "block";
+}
+}
+
 
 // input polaceholders
 
@@ -119,13 +130,7 @@ function notFoundPage() {
 }
 
 
-  //  CHECK IF COOKIES HAVE BEEN ACCEPTED
 
-  if (localStorage.getItem('cookies') == "accepted") {
-    $(".cookies")[0].style.display = "none";
-} else {
-  $(".cookies")[0].style.display = "block";
-}
 
 
 //  ACCEPT COOKIES

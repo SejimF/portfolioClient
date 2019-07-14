@@ -1,10 +1,12 @@
 
+
 :root {
     --animation-time: 2s; 
   }
 
   :lang(en) {
     font-family: 'Monoton', sans-serif;
+    font-weight: 800;
 }
 
 body {
@@ -22,8 +24,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: $background_fallback;
-    background: $background_gradient;
+        background: cyan;
 }
 
 section {
@@ -130,7 +131,7 @@ section {
   #first {
     -webkit-animation: flickerFirst ease alternate infinite;
             animation: flickerFirst  ease alternate infinite;
-            -webkit-animation-duration: $animation-time;
+            -webkit-animation-duration: --animation-time;
             animation-duration: .5s;
 
   }
@@ -139,14 +140,14 @@ section {
 
     -webkit-animation: flickerSecond  ease alternate infinite; 
             animation: flickerSecond  ease alternate infinite;
-             -webkit-animation-duration: $animation-time;
+             -webkit-animation-duration: --animation-time;
             animation-duration: 1s;
   }
   
   #third {
     -webkit-animation: flickerThird  ease alternate infinite;
             animation: flickerThird  ease alternate infinite;
-            -webkit-animation-duration: $animation-time;
+            -webkit-animation-duration: --animation-time;
             animation-duration: 2s;
 
   }
