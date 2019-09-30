@@ -1,0 +1,56 @@
+{
+    "meta":{
+        "imgUrl":"/public/meta-image/meta-image-eng.png"
+    },
+    "forOfor": {
+        "haventMade": "I haven't made this page yeat... sorry",
+        "linkTitle": "Try again"
+    },
+    "header": {
+        "aboutMe":"About Me",
+        "mySkills":"My Skills",
+        "myProjects":"My Projects",
+        "myContacts":"My Contacts",
+        "langChoice": "Choose language",
+        "langEn": "English",
+        "langRu": "Russian",
+        "langGr": "Greek"
+    },
+    "greeting": "../../public/myNameIS/myNameISKolodkoMaxim_EN.svg",
+
+    "aboutMe": {
+        "header": "Hello everyone!",
+        "description": "I'm software developer! And making my way through these interesting and beautiful world of developing web sites. I'll help you make your web site become true or be a good member in you team!",
+        "signature": "Kolodko Maxim"
+    },
+
+    "skillsHeader": "My Skills",
+    "projectsHeader": "My Projects",
+    
+    "projects": [
+        {"project_name": "Let Run",  "project_image_path": "../../public/projects/let-run.png", "project_desc": "Social media for runners that can be used on smartphones, tablets and desktop. Lets-run allows users to publish running events join the events, leave comments,add to favorites and also has a build-in forum.", "project_url": "https://let-run-today.tk/"},
+        {"project_name": "Roman snakes",      "project_image_path": "../../public/projects/snakes.png", "project_desc": "Simple responsible website for snakes for one my friend, have main page and gallery", "project_url": "https://snakeroman-97950.firebaseapp.com/"}
+    ],
+    "projectsLink": "See website!",
+    "sendMeAMessageForm":{
+        "sendMeAMessageHeader": "Send me a message",
+        "receiveNotification":"You will receive a confirmation email!",
+        "label":{
+            "name":"Enter your name:",
+            "email":"Enter your email:",
+            "subject":"Enter your subject:",
+            "message":"Enter your message:"
+        },
+        "name":"Kolodko Maxim",
+        "email":"example@email.com",
+        "subject":"Your subject here",
+        "message":"Your message here",
+        "buttonMessage":"Send me your message"
+    },
+
+
+    "footer": {
+        "mySocial":"You can find me here",
+        "madeBy":"Made by Kolodko Maxim"
+    }
+}

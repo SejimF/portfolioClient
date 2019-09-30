@@ -2,20 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <title>Portfolio | Kolodko Maxim!</title>
-    <link rel="canonical" href="https://kmaximdev.tk/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="theme-color" content="#5318af" />
+        <title>Portfolio | Kolodko Maxim | web-programming!</title>
+
+    <meta name="description"
+        content="Hello every one! I am front-end and back-end web-developer, languages i speak is HTML | CSS | SASS | JAVASCRIPT| ANGULAR 2.">
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Portfolio | Kolodko Maxim | web-programming!" />
+
+    <meta property="og:description"
+        content="Hello every one! I am front-end and back-end web-developer, languages i speak is HTML | CSS | SASS | JAVASCRIPT| ANGULAR 2." />
+
+    <meta property="og:image" content="https://kmaximdev.tk/public/meta-image/meta-image-eng.png" />
+
+    <meta property="og:url" content="https://kmaximdev.tk/en.html" />
+
+    <meta property="og:site_name" content="K.Maxim Dev" />
+
+    <meta property="fb:app_id" content="597853417401566" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <meta name="theme-color" content="#5318af" />
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#5318af">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#5318af">
-    <!-- favicon -->
 
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
@@ -23,55 +39,500 @@
     <link rel="mask-icon" href="/public/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#9f00a7">
     <meta name="theme-color" content="#ffffff">
-    <link  rel="stylesheet" href="../css/aboweFold.min.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGN6KR3ZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGN6KR3ZVC');
+</script>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./scripts/skillsPercentage.js"></script>
+    <!-- <title>Portfolio</title> -->
 </head>
 
-<body class="preload ">
-        <div class="loading">
-                <img src="./public/loaders/Bars-0.7s-200px.svg" alt="">
-                <h2 class="loading_info">Redirecting.</h2>
+<body>
+    <div class="drop_shadow"></div>
+    <div class="main_container">
+        <nav>
+            <span class="logo"><img draggable="false" src="./public/favicon/android-chrome-192x192.png" alt=""></span>
+            <!-- mobile nav -->
+            <div class="nav_list_mobile">
+                <div class="menu_button" onclick="changePage()">
+                    <span class="current_page"><a href="#">About Me</a></span>
+                    <div class="menu_bar ">
+                        <span class="upper_bar"></span>
+                        <span class="middle_bar"></span>
+                        <span class="lower_bar"></span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="aboutMe" onclick="moveToSelected(document.getElementById('aboutMe'))">
+                        <a href="#">About Me</a>
+                    </li>
+                    <li class="mySkills" onclick="moveToSelected(document.getElementById('mySkills'))">
+                        <a href="#">My Skills</a>
+                    </li>
+                    <li class="myProjects" onclick="moveToSelected(document.getElementById('myProjects'))">
+                        <a href="#">MyProjects</a>
+                    </li>
+                    <li class="contactMe" onclick="moveToSelected(document.getElementById('contactMe'))">
+                        <a href="#">Contact Me</a>
+                    </li>
+                    <li class="langSetup">
+                        <a href="#">EN</a>
+                    </li>
+                </ul>
             </div>
-            <script>
-                    setTimeout(function() {
-                        document.getElementsByClassName("loading_info")[0].textContent = "Redirecting..";
-                    }, 1000);
-                    setTimeout(function() {
-                        document.getElementsByClassName("loading_info")[0].textContent = "Redirecting...";
-                    }, 2000);
-                </script>
+
+            <!-- desktop navigation -->
+
+            <div class="nav_list_desktop">
+
+                <ul>
+                    <li class="aboutMe" onclick="moveToSelected(document.getElementById('aboutMe'), true)">
+                        <a href="#">About Me</a>
+                    </li>
+                    <li class="mySkills" onclick="moveToSelected(document.getElementById('mySkills'), true)">
+                        <a href="#">My Skills</a>
+                    </li>
+                    <li class="myProjects" onclick="moveToSelected(document.getElementById('myProjects'), true)">
+                        <a href="#">MyProjects</a>
+                    </li>
+                    <li class="contactMe" onclick="moveToSelected(document.getElementById('contactMe'), true)">
+                        <a href="#">Contact Me</a>
+                    </li>
+                    <li class="langSetup">
+                        <a href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+
+            <div class="inner_main">
+
+                <section id="aboutMe" class="page currentPage">
+                    <!-- Index page -->
+                    <div class="aboutMe--inner">
+                        <div class="hero_img img_container ">
+                            <img draggable="false" src="public/profilePic/Hwt2qIew84Y.png" alt="">
+                        </div>
+                        <div class="hero_paragraph ">
+                            <h1 class="header mainColorText">Hello everyone!</h1>
+                            <p class="paragraph_text mainColorText">I'm software developer! And making my way through these
+                                interesting and beautiful world of developing web sites. I'll help you make your web
+                                site become true or be a good member in you team!</p>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <!-- Skills page -->
+
+                <section id="mySkills" class=" page nextPage">
+                    <div class="mySkills--inner">
+                            <div class="soft_skills-container">
+
+                                    <div id="problem_solving--skill" class="soft_skills current_skill_container">
+                                        <div class="soft_skills--img-container">
+                                            <img draggable="false" draggable="false" src="./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash-mobile.jpg" alt="">
+                                        </div>
+                                        <div class="soft_skills--info">
+                                            <h3 class="soft_skills--header">Problem Solving</h3>
+                                            <p class="soft_skills--paragraph">I'm breaking requirements and problems in to small
+                                                steps
+                                                and solving them one by one!</p>
+                                        </div>
+                                    </div>
+            
+                                    <div id="communicating--skill" class="soft_skills next_skill_container">
+                                        <div class="soft_skills--img-container">
+                                            <img draggable="false" src="./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-mobile.jpg" alt="">
+                                        </div>
+                                        <div class="soft_skills--info">
+                                            <h3 class="soft_skills--header">Communicating</h3>
+                                            <p class="soft_skills--paragraph">I'm open, smart and nice person, we can talk about
+                                                your requirement and your project to make exactly what you want!</p>
+                                        </div>
+                                    </div>
+            
+                                    <div id="organised--skill" class="soft_skills next_skill_container">
+                                        <div class="soft_skills--img-container">
+                                            <img draggable="false" src="./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-mobile.png" alt="">
+                                        </div>
+                                        <div class="soft_skills--info">
+                                            <h3 class="soft_skills--header">Organised</h3>
+                                            <p class="soft_skills--paragraph">I am self motivated and orgonised person, making nice
+                                                and easy to understand code!</p>
+                                        </div>
+                                    </div>
+            
+                                </div>
+            
+            
+                                <div class="selectors skills_selector">
+                                    <span class="skill_circle problem_solving problem_solving--skill active"
+                                        onclick="moveToSelectedSkill(document.getElementById('problem_solving--skill'))"></span>
+                                    <span class="skill_circle communicating communicating--skill"
+                                        onclick="moveToSelectedSkill(document.getElementById('communicating--skill'))"></span>
+                                    <span class="skill_circle organised organised--skill"
+                                        onclick="moveToSelectedSkill(document.getElementById('organised--skill'))"></span>
+                                </div>
+            
+                                <div class="skills_state">
+
+                                    <div class="skill_row">
+                                            <div class="skills_state_element cssAnimation">
+                                                    <div class="canvas-wrap">
+                                                        <canvas id="canvas" class="cssCanvas sml_scr" width="100" height="100"></canvas>
+                                                        <canvas id="canvas" class="cssCanvas big_scr" width="150" height="150"></canvas>
+                                                        <span id="procent" class="procentCss cssCanvas"></span>
+                                                    </div>
+                                                    <h2 class="cssCanvas ">CSS</h2>
+                                                </div>
+                        
+                                                <div class="skills_state_element javaScriptAnimation">
+                                                    <div class="canvas-wrap">
+                                                        <canvas id="canvas" class="javaScriptCanvas sml_scr" width="100" height="100"></canvas>
+                                                        <canvas id="canvas" class="javaScriptCanvas big_scr" width="150" height="150"></canvas>
+                                                        <span id="procent" class="procentJavaScript javaScriptCanvas"></span>
+                                                    </div>
+                                                    <h2 class="javaScriptCanvas">JavaScript</h2>
+                                                </div>
+                        
+                                                <div class="skills_state_element htmlAnimation">
+                                                    <div class="canvas-wrap">
+                                                        <canvas id="canvas" class="htmlCanvas  sml_scr" width="100" height="100"></canvas>
+                                                        <canvas id="canvas" class="htmlCanvas  big_scr" width="150" height="150"></canvas>
+                                                        <span id="procent" class="procentHtml htmlCanvas"></span>
+                                                    </div>
+                                                    <h2 class="htmlCanvas">HTML</h2>
+                                                </div>
+                                    </div>
+
+                                    <div class="skill_row">
+                                            <div class="skills_state_element angular2Animation">
+                                                    <div class="canvas-wrap">
+                                                        <canvas id="canvas" class="angular2Canvas sml_scr" width="100" height="100"></canvas>
+                                                        <canvas id="canvas" class="angular2Canvas big_scr" width="150" height="150"></canvas>
+                                                        <span id="procent" class="procentAngular2 angular2Canvas"></span>
+                                                    </div>
+                                                    <h2 class="angular2Canvas">Angular2</h2>
+                                                </div>
+                        
+                                                <div class="skills_state_element nodeJSAnimation">
+                                                    <div class="canvas-wrap">
+                                                        <canvas id="canvas" class="nodeJSCanvas sml_scr" width="100" height="100"></canvas>
+                                                        <canvas id="canvas" class="nodeJSCanvas big_scr" width="150" height="150"></canvas>
+                                                        <span id="procent" class="procentNodeJS nodeJSCanvas"></span>
+                                                    </div>
+                                                    <h2 class="nodeJSCanvas">NodeJS</h2>
+                                                </div>
+                        
+                                                <div class="skills_state_element mongoDbAnimation">
+                                                    <div class="canvas-wrap">
+                                                        <canvas id="canvas" class="mongoDbCanvas sml_scr" width="100" height="100"></canvas>
+                                                        <canvas id="canvas" class="mongoDbCanvas big_scr" width="150" height="150"></canvas>
+                                                        <span id="procent" class="procentMongoDb mongoDbCanvas"></span>
+                                                    </div>
+                                                    <h2 class="mongoDbCanvas">MongoDB</h2>
+                                                </div>
+                                    </div>
+            
+
+                                </div>
+            
+                    </div>
+
+                </section>
+
+                <!-- Project Page -->
+
+                <section id="myProjects" class="  page nextPageHidden">
+                        <!-- <div class="contactMe--inner"> -->
+
+                                <!-- <div class="project_carousel"> -->
+                                    <div class="myProjects--inner">
+
+                                            <article id="news" class="project current_project_container projectAnim">
+                
+                                                    <div class="project_first_row">
+                                                        <div class="prj_img_container">
+                                                            <img draggable="false" src="./public/projects/Screenshot_2019-08-14 News page(1).jpg" alt="">
+                                                        </div>
+                                                        <div class="prj_techs">
+                                                            <button class="prj_techs--buttons  cssButton">CSS</button>
+                                                            <button class="prj_techs--buttons  htmlButton">HTML</button>
+                                                            <button class="prj_techs--buttons  javaScriptButton">JavaScript</button>
+                                                            <button class="prj_techs--buttons  nodeJSButton">NodeJS</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="project_info">
+                                                        <h3 class="project_header">News website (front-end)</h3>
+                                                        <hr class="prj-hr">
+                                                        <p class="project_paragraph">Simple responsible page for news from https://newsapi.org</p>
+                                                    </div>
+
+                                                    <button class="open_git_project_button open_project_button"><i
+                                                        class="fab fa-github"></i> <a  target="_blank" href="https://github.com/SejimF/portfolioClient/tree/master/newsClient">GITHUB</a> </button>
+
+                                                    <button class="open_project_button"> <a target="_blank" href="../../newsClient/index.html">See Website</a> <i
+                                                            class="far fa-arrow-alt-circle-right"></i></button>
+
+                                                </article>
+                        
+                                                <article id="lets-run" class="project next_project_container projectAnim">
+                        
+                                                    <div class="project_first_row">
+                                                        <div class="prj_img_container">
+                                                            <img draggable="false" src="./public/projects/Screenshot_2019-08-14 LetsRun.jpg" alt="">
+                                                        </div>
+                                                        <div class="prj_techs">
+                                                            <button class="prj_techs--buttons cssButton">CSS</button>
+                                                            <button class="prj_techs--buttons htmlButton">HTML</button>
+                                                            <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                                            <button class="prj_techs--buttons nodeJSButton">NodeJS</button>
+                                                            <button class="prj_techs--buttons angular2Button">Angular2</button>
+                                                            <button class="prj_techs--buttons mongoDbButton">MongoDB</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="project_info">
+                                                        <h3 class="project_header">Let's Run</h3>
+                                                        <hr class="prj-hr">
+                                                        <p class="project_paragraph">Social media for runners that can be used on smartphones, tablets and desktop. Lets-run allows users to publish running events join the events, leave comments,add to favorites and also has a build-in forum.</p>
+                                                    </div>
+
+                                                    <button class="open_git_project_button open_project_button"><i
+                                                        class="fab fa-github"></i> <a target="_blank" href="https://github.com/vkolon01/Lets-Run">GITHUB</a> </button>
+
+                                                    <button class="open_project_button"> <a target="_blank" href="https://let-run-today.tk/">See Website</a> <i
+                                                            class="far fa-arrow-alt-circle-right"></i></button>
+                                                </article>
+                        
+                                                <article id="greece" class="project next_project_container projectAnim">
+                        
+                                                    <div class="project_first_row">
+                                                        <div class="prj_img_container">
+                                                            <img draggable="false" src="./public/projects/Screenshot_2019-08-14 Discover Greece.jpg" alt="">
+                                                        </div>
+                                                        <div class="prj_techs">
+                                                            <button class="prj_techs--buttons cssButton">CSS</button>
+                                                            <button class="prj_techs--buttons htmlButton">HTML</button>
+                                                            <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                                        </div>
+                                                    </div>
+                         
+                                                    <div class="project_info">
+                                                        <h3 class="project_header">Travel website for Santorini (front-end)</h3>
+                                                        <hr class="prj-hr">
+                                                        <p class="project_paragraph">Responsible page for Santorini tour</p>
+                                                    </div>
+                                                    <button class="open_git_project_button open_project_button"><i
+                                                        class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/portfolioClient/tree/master/greeceClient">GITHUB</a> </button>
+                                                    <button class="open_project_button"> <a target="_blank" href="../../greeceClient/index.html">See Website</a> <i
+                                                            class="far fa-arrow-alt-circle-right"></i></button>
+                                                </article>
+
+                                                <article id="sovushka" class="project next_project_container projectAnim">
+                        
+                                                    <div class="project_first_row">
+                                                        <div class="prj_img_container">
+                                                            <img draggable="false" src="./public/projects/sovushka-toy.jpg" alt="">
+                                                        </div>
+                                                        <div class="prj_techs">
+                                                            <button class="prj_techs--buttons cssButton">CSS</button>
+                                                            <button class="prj_techs--buttons htmlButton">HTML</button>
+                                                            <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                                        </div>
+                                                    </div>
+                         
+                                                    <div class="project_info">
+                                                        <h3 class="project_header">Sovushka-toy</h3>
+                                                        <hr class="prj-hr">
+                                                        <p class="project_paragraph">Simple responsible website for handmade toys, have main page with gallery</p>
+                                                    </div>
+                                                    <button class="open_git_project_button open_project_button"><i
+                                                        class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/jeniaPortfolio">GITHUB</a> </button>
+                                                    <button class="open_project_button"> <a target="_blank" href="https://sovushka-toy.tk">See Website</a> <i
+                                                            class="far fa-arrow-alt-circle-right"></i></button>
+                                                </article>
+                        
+                                                <article id="snakes" class="project next_project_container projectAnim">
+                        
+                                                        <div class="project_first_row">
+                                                            <div class="prj_img_container">
+                                                                <img draggable="false" src="./public/projects/snakes.jpg" alt="">
+                                                            </div>
+                                                            <div class="prj_techs">
+                                                                <button class="prj_techs--buttons cssButton">CSS</button>
+                                                                <button class="prj_techs--buttons htmlButton">HTML</button>
+                                                                <button class="prj_techs--buttons angular2Button">Angular2</button>
+                                                            </div>
+                                                        </div>
+                             
+                                                        <div class="project_info">
+                                                            <h3 class="project_header">Roman snakes</h3>
+                                                            <hr class="prj-hr">
+                                                            <p class="project_paragraph">Simple responsible website for snakes for one my friend, have main page and gallery</p>
+                                                        </div>
+                                                        <button class="open_git_project_button open_project_button"><i
+                                                            class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/snakeApp">GITHUB</a> </button>
+                                                        <button class="open_project_button"> <a target="_blank" href="https://snakeroman-97950.firebaseapp.com/">See Website</a> <i
+                                                                class="far fa-arrow-alt-circle-right"></i></button>
+                                                    </article>
+
+                                                    <article id="romanNumbers" class="project next_project_container projectAnim">
+                        
+                                                            <div class="project_first_row">
+                                                                <div class="prj_img_container">
+                                                                    <img draggable="false" src="./public/projects/Screenshot_2019-09-30 Roman Number Converter.png" alt="">
+                                                                </div>
+                                                                <div class="prj_techs">
+                                                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                                                    <button class="prj_techs--buttons angular2Button">Angular2</button>
+                                                                </div>
+                                                            </div>
+                                 
+                                                            <div class="project_info">
+                                                                <h3 class="project_header">Roman number Converter</h3>
+                                                                <hr class="prj-hr">
+                                                                <p class="project_paragraph">Simple responsible website to convert roman numbers to arabic and vica versa.</p>
+                                                            </div>
+                                                            <button class="open_git_project_button open_project_button"><i
+                                                                class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/snakeApp">GITHUB</a> </button>
+                                                            <button class="open_project_button"> <a target="_blank" href="../../romanNumbers/index.html">See Website</a> <i
+                                                                    class="far fa-arrow-alt-circle-right"></i></button>
+                                                        </article>
+
+                                            <!-- </div> -->
+                                            <!-- <button style="background: red; padding: 40px">How are you</button> -->
+                                            <div class="prj_selector">
+
+                                                <span class="prj_circle first_project_in_list news active"
+                                                    onclick="moveToSelectedProject(document.getElementById('news'))"></span>
+
+                                                <span class="prj_circle lets-run"
+                                                    onclick="moveToSelectedProject(document.getElementById('lets-run'))"></span>
+
+                                                <span class="prj_circle greece"
+                                                    onclick="moveToSelectedProject(document.getElementById('greece'))"></span>
+
+                                                    <span class="prj_circle sovushka"
+                                                    onclick="moveToSelectedProject(document.getElementById('sovushka'))"></span>
+
+                                                    
+                                                    <span class="prj_circle snakes"
+                                                    onclick="moveToSelectedProject(document.getElementById('snakes'))"></span>
+                                            </div>
+
+                                    </div>
+
+                                       
+                
+                                </section>
+                
+                                <section id="contactMe" class=" page nextPageHidden">
+                
+                                    <div class="contactMe--inner">
+                
+                                        <h3 class="contact_me_header mainColorText">Contact Me</h3>
+                
+                                        <form id="formContainer" target="hiddenFrame" onsubmit="sendEmail();">
+                                            <div class="input_data">
+                                                <label for="name">Enter Your Name:</label>
+                                                <input type="text" id="contact_me-input--name" name="name" placeholder="Kolodko Maxim" required>
+                                            </div>
+                
+                                            <div class="input_data">
+                                                <label for="email">Enter Your Email:</label>
+                                                <input type="email" id="contact_me-input--email" name="email" placeholder="example@.email.com" required>
+                                            </div>
+                
+                                            <div class="input_data">
+                                                <label for="subject">Enter Your Subject:</label>
+                                                <input type="text" id="contact_me-input--subject" name="subject" placeholder="Your Subject Here" required>
+                                            </div>
+                                            <input id="contact_me-input--lang" type="hidden" name="lang" value="en">
+                                            <div class="area_data">
+                                                <div class="area_data--inner">
+                                                    <label for="message">Enter Your Message:</label>
+                                                    <!-- <input > -->
+                                                    <div class="textarea_with_a_button">
+                                                        <textarea id="contact_me-input--message" type="text" placeholder="Your Message Here" name="message"
+                                                        cols="20" rows="5" required minlength="5"></textarea>
+                                                    <button type="submit" class="contact_me--button sendMessage">Send Me A Message</button>
+                                                    <button type="submit" class="contact_me--button messageSending">Collecting the data from inputs</button>
+                                                    <button type="submit" class="contact_me--button messageSended">Message Sended</button>
+                                                    <button type="submit" class="contact_me--button messageError">Error, try again</button>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- <p id="error">You need to pass google captcha! </p> -->
+                                            <div class="g-recaptcha" data-sitekey="6Lf3IaEUAAAAACPqr4sd88AG_YF6g17S9-lX1CCr"></div>
+                
+                                        </form>
+                                        <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+                                        <h3 class="contact_me_or mainColorText">Or you can find me here</h3>
+                
+                                        <div class="social_media">
+                                            <a class="social_span" target="_blank" href="https://vk.com/kolodkomaxim"><i
+                                                    class="footer_icon icon fab fa-vk"></i></a>
+                                            <a class="social_span" target="_blank" href="https://web.facebook.com/kolodko.maksim"><i
+                                                    class="footer_icon icon fab fa-facebook-f"></i></a>
+                                            <a class="social_span" target="_blank" href="https://github.com/SejimF"><i
+                                                    class="footer_icon icon fab fa-github"></i></a>
+                                            <a class="social_span" target="_blank"
+                                                href="https://www.freecodecamp.org/kolodko%20maxim"><i
+                                                    class="footer_icon fab fa-free-code-camp"></i></a>
+                
+                                        </div>
+                                    </div>
+                
+                    <section>
+
+            </div>
+        </main>
+
+    </div>
+
+    <link rel="stylesheet" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="./scripts/nav.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+    <script src="./scripts/pageTransition.js"></script>
+    <script src="./scripts/skillsTransition.js"></script>
+    <script src="./scripts/projectsTransition.js"></script>
+    <script src="./scripts/contactMe.js"></script>
+    
     <script>
-        function downloadJSAtOnload() {
-
-
-            var jquery = document.createElement("script");
-            jquery.src = "../scripts/jquery-3.4.1.min.js";
-            document.body.appendChild(jquery);
-            jquery.onload = function () {
-                redirect();
-            };
-        }
-
-        if (window.addEventListener) {
-            window.addEventListener("load", downloadJSAtOnload, false);
-        } else if (window.attachEvent) {
-            window.attachEvent("onload", downloadJSAtOnload);
-        } else {
-            window.onload = downloadJSAtOnload;
-        }
-
-        function redirect() {
-            setTimeout(function () {
-                var langSetup = document.createElement("script");
-                langSetup.async = true;
-                langSetup.src = "./scripts/langSetup.js";
-                document.body.appendChild(langSetup);
-                langSetup.onload = function () {
-                    redirectToTranslatedFile();
-                }
-            }, 2000)
+        window.onload = function () {
+            indexPageAnimations("enter");
         }
     </script>
-
 </body>
 
 </html>

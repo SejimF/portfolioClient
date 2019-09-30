@@ -1,0 +1,270 @@
+
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 4px 0px black;
+}
+
+.skills_name {
+    width: 70%;
+    height: 100%;
+    background: $skil_name-color;
+    font-size: $font-size-small;
+    color: $section_color;
+}
+.skills_state {
+    width: 30%;
+    height: 100%;
+    background: $skill_level-color;
+    font-size: $font-size-small;
+}
+
+
+h1 {
+    margin-top: 80px;
+    margin-top: 80px;
+    margin-top: 5rem;
+    font-family: 'Timmana', sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    width: 90%;
+    padding: 0;
+  }
+
+  li img {
+      display: none;
+}
+
+  li h3 {
+    font-size: $font-size-small;
+    color: $skill_section-color;
+  }
+
+  li p {
+      margin-left: 1rem;
+    font-size: $font-size-small;
+    color: $section_color;
+  }
+
+.skills > * > p {
+    text-align: center;
+}
+
+.skills > * > p > img{
+    width: 15px;
+    height: 14px;
+}
+
+
+.skills > * > p > img:nth-child(1){
+    -webkit-animation: startsBreath 5s infinite alternate;
+            animation: startsBreath 5s infinite alternate;
+}
+
+.skills > * > p > img:nth-child(2){
+    -webkit-animation: startsBreath 5s 1s infinite alternate;
+            animation: startsBreath 5s 1s infinite alternate;
+}
+
+.skills > * > p > img:nth-child(3){
+    -webkit-animation: startsBreath 5s 2s infinite alternate;
+            animation: startsBreath 5s 2s infinite alternate;
+}
+
+.skills > * > p > img:nth-child(4){
+    -webkit-animation: startsBreath 5s 3s infinite alternate;
+            animation: startsBreath 5s 3s infinite alternate;
+}
+
+.skills > * > p > img:nth-child(5){
+    -webkit-animation: startsBreath 5s 4s infinite alternate;
+            animation: startsBreath 5s 4s infinite alternate;
+}
+
+@-webkit-keyframes startsBreath {
+    0% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+    }
+    100% {
+              -webkit-transform: scale(1.7);
+                      transform: scale(1.7);
+    }
+  }
+
+@keyframes startsBreath {
+    0% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+    }
+    100% {
+              -webkit-transform: scale(1.7);
+                      transform: scale(1.7);
+    }
+  }
+
+
+
+ @media screen and (min-width: 760px) { 
+
+    li:nth-child(odd)  img {
+        display: block;
+        width: 30%;
+        float: left;
+         margin-right: 1rem;
+        
+  }
+
+  li:nth-child(even)  img {
+    display: block;
+    width: 30%;
+    float: right;
+    
+}
+  
+    li p {
+        margin-left: 0;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .skills > * > p > img{
+        width: 45px;
+        height: 20px;
+    }
+
+ }
+
+ @media screen and (min-width: 1440px) { 
+
+    .skills_name {
+        font-size: $font-size-small + .5rem;
+    }
+    .skills_state {
+        font-size: $font-size-small + .5rem;
+    }
+    
+      li h3 {
+        font-size: $font-size-small + .5rem;
+      }
+    
+      li p {
+        font-size: $font-size-small + .5rem;
+      }
+
+    .skills > * > p > img{
+        width: 65px;
+        height: 24px;
+    }
+
+ }
+
+
+ @media screen and (min-width: 2560px) { 
+
+    .skills_name {
+        font-size: $font-size-small + 1.5rem;
+    }
+    .skills_state {
+        font-size: $font-size-small + 1.5rem;
+    }
+    
+      li h3 {
+        font-size: $font-size-small + 1.5rem;
+      }
+    
+      li p {
+        font-size: $font-size-small + 1.5rem;
+      }
+
+    .skills > * > p > img{
+        width: 100px;
+        height: 58px;
+    }
+
+ }
+
+
+ /* IE MEDIA */
+
+ @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+
+    li h3 {
+        font-size: 1rem;
+      }
+    
+      li p {
+        font-size: 1rem;
+      }
+
+    .skills_name {
+        font-size: 1rem;
+    }
+    .skills_state {
+        font-size: 1rem;
+    }
+ 
+}
+
+@media screen and (min-width: 360px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    li h3 {
+        font-size: 1.5rem;
+      }
+    
+      li p {
+        font-size: 1.5rem;
+      }
+
+    .skills_name {
+        font-size: 1.5rem;
+    }
+    .skills_state {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    li h3 {
+        font-size: 2rem;
+      }
+    
+      li p {
+        font-size: 2rem;
+      }
+
+    .skills_name {
+        font-size: 2rem;
+    }
+    .skills_state {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 2560px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    li h3 {
+        font-size: 3rem;
+      }
+    
+      li p {
+        font-size: 3rem;
+      }
+
+    .skills_name {
+        font-size: 3rem;
+    }
+    .skills_state {
+        font-size: 3rem;
+    }
+}

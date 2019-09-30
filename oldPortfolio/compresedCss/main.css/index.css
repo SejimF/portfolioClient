@@ -1,0 +1,24 @@
+@import url(./footer.css);
+html {
+  margin: 0;
+  scroll-behavior: smooth; }
+
+body {
+  display: grid;
+  -ms-grid-rows: minmax(100vh, auto) fit-content(20%);
+  grid-template-rows: minmax(100vh, auto) fit-content(20%); }
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 5; }
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
+@media screen and (min-width: 360px) and (max-width: 760px) {
+  div:last-of-type {
+    left: 0 !important; } }

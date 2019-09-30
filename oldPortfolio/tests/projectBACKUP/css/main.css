@@ -1,0 +1,146 @@
+@import "mainSections/myName.css";
+@import "mainSections/aboutMe.css";
+@import "mainSections/imageGallery.css";
+@import "mainSections/skills.css";
+@import "mainSections/projects.css";
+@import "mainSections/contactUs.css";
+@import "./variables/fonts.css";
+
+
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    /* overflow: hidden; */
+}
+
+html::-webkit-scrollbar { 
+    display: none;
+}
+
+main {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+
+/* main  * {
+    flex: 0 0 auto;
+} */
+
+.section_name {
+    font-size: var(--font-size-big);
+}
+
+.block-scroll {
+    overflow-y: hidden;
+}
+
+.loading {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.under-construction {
+    border: 2px solid red;
+    background: darkred;
+}
+
+@media screen and (min-width: 360px) { 
+
+    main {
+        /* padding-top: 6rem; */
+    }
+
+ }
+
+ @media screen and (min-width: 760px) { 
+    .loading {
+        width: 10%;
+    }
+
+ }
+
+ @media screen and (min-width: 1440px) { 
+
+    main {
+        /* padding-top: 10rem; */
+    }
+
+ }
+
+
+ /* INTERNET EXPLORER STYLES */
+
+ @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+
+    .section_name {
+        font-size: 1rem;
+    }
+    }
+
+@media screen and (min-width: 360px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .section_name {
+        font-size: 1.5rem;
+    }
+    }
+
+@media screen and (min-width: 1440px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+.section_name {
+    font-size: 2rem;
+}
+}
+
+@media screen and (min-width: 2560px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .section_name {
+        font-size: 5rem;
+    }
+    }
+
+
+/* 
+
+                IE COPY PASTE HELP
+
+    @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+
+ 
+        }
+    
+    @media screen and (min-width: 360px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+ 
+        }
+    
+    @media screen and (min-width: 1440px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+ 
+    }
+    
+    @media screen and (min-width: 2560px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ 
+        }
+
+         */

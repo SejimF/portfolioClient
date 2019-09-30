@@ -1,0 +1,89 @@
+
+
+@keyframes flipOutX {
+    from {
+      transform: perspective(400px);
+    }
+  
+    30% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      opacity: 1;
+    }
+  
+    to {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      opacity: 0;
+    }
+  }
+  
+  .flipOutX75 {
+    animation-duration: 0.75s;
+    animation-name: flipOutX;
+    animation-fill-mode: forwards;  
+    backface-visibility: visible !important;
+  }
+  
+  .flipOutX50 {
+    animation-delay: .25s;
+    animation-duration: 0.50s;
+    animation-name: flipOutX;
+    animation-fill-mode: forwards;  
+    backface-visibility: visible !important;
+  }
+  
+  .flipOutX25 {
+    animation-delay: .50s;
+    animation-duration: 0.25s;
+    animation-name: flipOutX;
+    animation-fill-mode: forwards;  
+    backface-visibility: visible !important;
+  }
+  @keyframes flipInX {
+    from {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    }
+  
+    80% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      transform: perspective(400px);
+      opacity: 1;
+    }
+  }
+  
+  .flipInX75 {
+    animation-duration: 0.75s;
+    
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-fill-mode: forwards;  
+  }
+
+  .flipInX25 {
+    animation-delay: .50s;
+    animation-duration: 0.25s;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-fill-mode: forwards;  
+  }
+
+  .flipInX50 {
+    animation-delay: .25s;
+    animation-duration: 0.50s;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-fill-mode: forwards;  
+  }

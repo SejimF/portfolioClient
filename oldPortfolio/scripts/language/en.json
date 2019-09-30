@@ -1,0 +1,73 @@
+{
+    "meta":{
+        "imgUrl":"/public/meta-image/meta-image-eng.png"
+    },
+    "forOfor": {
+        "haventMade": "I haven't made this page yeat... sorry",
+        "linkTitle": "Try again"
+    },
+    "header": {
+        "aboutMe":"About Me",
+        "mySkills":"My Skills",
+        "myProjects":"My Projects",
+        "myContacts":"My Contacts",
+        "langChoice": "Choose language",
+        "langEn": "English",
+        "langRu": "Russian",
+        "langGr": "Greek"
+    },
+    "greeting": "../../public/myNameIS/myNameISKolodkoMaxim_EN.svg",
+
+    "aboutMe": {
+        "header": "Hello everyone!",
+        "description": "I'm software developer! And making my way through these interesting and beautiful world of developing web sites. I'll help you make your web site become true or be a good member in you team!",
+        "signature": "Kolodko Maxim"
+    },
+
+    "skillsHeader": "My Skills",
+    "softSkills": {
+        "problemSolving": {
+            "title": "Problem Solving",
+            "paragraph": "I'm breking requirements and problems in to small steps and solving them one by one!"
+        },
+        "communicating": {
+            "title": "Communicating",
+            "paragraph": "I'm open, smart and nice person, we can talk about your requirement and your project to make exactly what you want!"
+        },
+        "organised": {
+            "title": "Organised",
+            "paragraph": "I am self motivated and orgonised person, making nice and easy to understand code!"
+        }
+    },
+    "projectsHeader": "My Projects",
+    
+    "projects": [
+        {"project_name": "Let's Run",  "project_image_path": "../../public/projects/let-run.jpg", "project_desc": "Social media for runners that can be used on smartphones, tablets and desktop. Lets-run allows users to publish running events join the events, leave comments,add to favorites and also has a build-in forum.", "project_url": "https://let-run-today.tk/"},
+        {"project_name": "Roman snakes",      "project_image_path": "../../public/projects/snakes.jpg", "project_desc": "Simple responsible website for snakes for one my friend, have main page and gallery", "project_url": "https://snakeroman-97950.firebaseapp.com/"},
+        {"project_name": "Sovushka-toy",      "project_image_path": "../../public/projects/sovushka-toy.jpg", "project_desc": "Simple responsible website for handmade toys, have main page with gallery", "project_url": "https://sovushka-toy.tk/"},
+        {"project_name": "News website (front-end)",      "project_image_path": "../../public/projects/news.jpg", "project_desc": "Simple responsible page for news from https://newsapi.org", "project_url": "../../newsClient/index.html"},
+        {"project_name": "Travel website for Santorini (front-end)",      "project_image_path": "../../public/projects/greece.jpg", "project_desc": "Responsible page for Santorini tour", "project_url": "../../greeceClient/index.html"}
+    ],
+    "projectsLink": "See website!",
+    "sendMeAMessageForm":{
+        "sendMeAMessageHeader": "Send me a message",
+        "receiveNotification":"You will receive a confirmation email!",
+        "label":{
+            "name":"Enter your name:",
+            "email":"Enter your email:",
+            "subject":"Enter your subject:",
+            "message":"Enter your message:"
+        },
+        "name":"Kolodko Maxim",
+        "email":"example@email.com",
+        "subject":"Your subject here",
+        "message":"Your message here",
+        "buttonMessage":"Send me your message"
+    },
+    "cookies": "The website stores cookies on your computer. These cookies are used for language info we store to show you page on your selected language.Also we are using cookies for google reCAPTCHA!",
+    "cookiesButton": "ok",
+    "footer": {
+        "mySocial":"You can find me here",
+        "madeBy":"Made by Kolodko Maxim"
+    }
+}

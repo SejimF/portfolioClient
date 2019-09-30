@@ -1,0 +1,330 @@
+.selectors {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.selectors span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 6px solid #8A90DF;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+
+span.active {
+    background: #97C4EA;
+    cursor: auto;
+}
+
+.skills_state {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    // flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.skill_row {
+    width: 100%;
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.skills_state_element {
+    width: 100px;
+    height: auto;
+}
+
+span#procent {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+}
+
+span#procent::after {
+    content: '%';
+}
+
+.canvas-wrap {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.soft_skills-container {
+    position: relative;
+    width: 95%;
+    height:  150px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+
+.soft_skills {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: transform .5s ease-in, opacity .5s ease-in;
+}
+
+.soft_skills--img-container {
+    width: 40%;
+    height: auto;
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, -2000, 0);
+}
+
+.soft_skills--img-container img {
+    width: 100%;
+    height: 100%;
+    background: greenyellow;
+    object-fit: cover;
+}
+
+.soft_skills--info {
+    width: 60%;
+}
+
+.soft_skills--header {
+    font-size: .8rem;
+    margin-left: .5rem;
+    color: $activeLink;
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 2000, 0);
+}
+
+.soft_skills--paragraph {
+    font-size: .8rem;
+    margin-left: .5rem;
+    color: $activeLink;
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 2000, 0);
+}
+
+
+.skills_selector {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+
+.cssCanvas {
+    color: #146FB2;
+
+}
+
+.javaScriptCanvas {
+    color: #E8A04D;
+
+}
+
+.htmlCanvas {
+    color: #DD4B25;
+
+}
+
+.angular2Canvas {
+    color: #C3002F;
+
+}
+
+.nodeJSCanvas {
+    color: #3C823B;
+
+}
+
+.mongoDbCanvas {
+    color: #402F20;
+
+}
+
+.big_scr {
+    display: none;
+}
+
+.cssAnimation {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+.javaScriptAnimation {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+.htmlAnimation {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+.angular2Animation {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+.nodeJSAnimation {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+.mongoDbAnimation {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -2000);
+}
+
+.mySkills--inner {
+    position: absolute;
+    top: 0;
+    min-height: 500px;
+    height: 100%;
+    width: 100vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    touch-action: pan-y;
+}
+
+// Soft skills container transitions
+
+.current_skill_container {
+    transform: translateY(0%) translateX(0%);
+    opacity: 1;
+}
+
+.previus_skill_container {
+    transform: translateY(0%) translateX(-100%);
+    opacity: 0;
+}
+
+.next_skill_container {
+    transform: translateY(0%) translateX(100%);
+    opacity: 0;
+}
+
+@include for-tablet-up-768 {
+    
+    .soft_skills-container {
+        height: 200px;
+        width: 80%;
+    }
+
+    .soft_skills--header {
+        font-size: 1rem;
+    }
+
+    .soft_skills--paragraph {
+        font-size: 1rem;
+    }
+
+    span#procent {
+        font-size: 1.5rem;
+    }
+
+    .sml_scr {
+        display: none;
+    }
+
+    .big_scr {
+        display: inline-block;
+    }
+
+    .mySkills--inner {
+        position: absolute;
+        top: 0;
+        min-height: 720px;
+        height: 100%;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        touch-action: pan-y;
+    }
+
+
+    .skills_state {
+        width: 90%;
+    }
+
+    .skills_state_element {
+        width: 150px;
+        margin: 0 2rem;
+    }
+
+    .canvas-wrap {
+        width: 150px;
+        height: 150px;
+    }
+
+  }
+
+
+  @include for-tablet-up-900  {
+
+    .soft_skills--header {
+        margin: 0;
+        margin-left: .5rem;
+        font-size: 2rem;
+    }
+
+    .soft_skills--paragraph {
+        font-size: 1.5rem;
+    }
+
+  }
+
+
+  @include for-big-desktop-up-1800 {
+
+    .mySkills--inner {
+        width: 85vw;
+    }
+
+    .soft_skills-container {
+        height: 250px;
+    }
+
+    span#procent {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .soft_skills--paragraph {
+        font-size: 2rem;
+    }
+
+    .soft_skills--header {
+        font-size: 3rem;
+    }
+
+    .selectors span {
+        width: 30px;
+        height: 30px;
+    }
+  }

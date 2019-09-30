@@ -1,0 +1,355 @@
+.project_carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.myProjects--inner {
+    position: absolute;
+    top: 0;
+    min-height: 620px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    touch-action: pan-y;
+}
+
+.project {
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: auto;
+    min-height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: linear-gradient(44deg, #9ECCFF, #EFD0F8);
+    border-bottom: 5px solid $activeLink;
+    border-bottom-left-radius: 5px;
+    transition: transform .5s ease-in, opacity .5s ease-in;
+    touch-action: pan-y;
+}
+
+
+
+.project_first_row {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+
+.prj_img_container {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+        transform: perspective(500px) translateZ(-1000px);
+    opacity: 0,
+}
+
+
+.prj_techs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+        transform: perspective(500px) translateZ(-1000px);
+    opacity: 0,
+}
+
+.prj_techs--buttons {
+    margin: 1em;
+    border-radius: 5px;
+    padding: 5px;
+    background: transparent;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: #536E95;
+    
+}
+
+.project_header {
+    margin: .5rem;
+        transform: perspective(500px) translateZ(-1000px);
+    opacity: 0,
+}
+
+hr {
+    width: 100%;
+}
+
+
+.project_paragraph {
+    margin: .5rem;
+        transform: perspective(500px) translateZ(-1000px);
+    opacity: 0,
+}
+
+
+// .prj_tech_button {
+//     border-radius: 5px;
+//     padding: 5px;
+//     background: transparent;
+// }
+
+
+.cssButton {
+    color: #146FB2;
+    border: 2px solid #146FB2;
+}
+
+.javaScriptButton {
+    color: #E8A04D;
+    border: 2px solid #E8A04D;
+}
+
+.htmlButton {
+    color: #DD4B25;
+    border: 2px solid #DD4B25;
+}
+
+.angular2Button {
+    color: #C3002F;
+    border: 2px solid #C3002F;
+}
+
+.nodeJSButton {
+    color: #3C823B;
+    border: 2px solid #3C823B;
+}
+
+.mongoDbButton {
+    color: #402F20;
+    border: 2px solid #402F20;
+}
+
+
+.open_project_button {
+    display: flex;
+    position: absolute;
+    bottom: -45px;
+    right: 0px;
+    padding: .5rem;
+    border: 0;
+    background: #536e95;
+    border-bottom-left-radius: 0px;
+    /* color: white; */
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: white;
+        margin-right: 1em;
+        font-family: Cinzel;
+    }
+
+    i {
+        color: white;
+        font-size: 1.5rem;
+        transition: transform .3s ease-in-out;
+    }
+
+    &:hover {
+
+        i {
+
+            transform: translateX(5px);
+        }
+    }
+}
+
+.open_git_project_button {
+    bottom: -45px;
+    right: 130px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    background: #374861;
+
+    a {
+        // color: white;
+        margin-left: 1em;
+        // font-family: Cinzel;
+    }
+
+    i {
+        // color: white;
+        // font-size: 1.5rem;
+        transition: transform .3s ease-in-out;
+    }
+
+    &:hover {
+
+        i {
+
+            transform: translateX(-5px);
+        }
+    }
+}
+
+.prj_selector {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: auto; */
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 2000);
+
+    span {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 6px solid #8A90DF;
+        margin: 0 .5rem;
+        cursor: pointer;
+    }
+}
+
+
+// PROJECT TRANSITION
+
+.current_project_container {
+    transform: translateY(0%) translateX(0%);
+    opacity: 1;
+}
+
+.previus_project_container {
+    transform: translateY(-200%) translateX(0%);
+    opacity: 0;
+}
+
+.next_project_container {
+    transform: translateY(-200%) translateX(0%);
+    opacity: 0;
+}
+
+
+.projectAnim{
+    // transform: perspective(500px) translateZ(-1000px);
+    opacity: 0,
+}
+
+
+
+@media (min-width: 640px)  { 
+
+    .myProjects--inner {
+        min-height: 520px;
+
+    }
+    
+
+}
+
+@include for-tablet-up-768 {
+
+    .myProjects--inner {
+        min-height: 520px;
+    }
+
+}
+
+@include for-tablet-up-900 { 
+
+    .project {
+        opacity: 1;
+        top: 60px;
+        height: 70%;
+        width: 90%;
+        flex-direction: row;
+        align-items: end;
+        border-bottom-left-radius: 30px;
+    }
+
+    .project_first_row {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .prj_img_container {
+        height: auto;
+        transform: scale(0.9) translate(0px, -60px) !important;
+        box-shadow: 5px -3px 20px 0px #00000026;
+    }
+
+    .prj_techs--buttons { 
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .project_info {
+        width: 100%;
+    }
+
+    .open_git_project_button {
+        right: 148px;
+    }
+
+    .open_project_button {
+        font-size: 1rem;
+        bottom: -44px;
+    }
+}
+
+
+@include for-big-desktop-up-1800 {
+
+    .prj_techs--buttons {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .project_header {
+        font-size: 2rem;
+    }
+
+    hr {
+        width: 100%;
+        height: 5px;
+    }
+
+    .project_paragraph {
+
+        font-size: 2rem;
+
+    }
+
+    .open_git_project_button {
+        right: 288px;
+    }
+
+    .open_project_button {
+        font-size: 2rem;
+        bottom: -76px;
+        padding: 1rem;
+    }
+
+    .open_project_button i {
+        font-size: 2.5rem;
+    }
+
+    .prj_selector span {
+        width: 30px;
+        height: 30px;
+    }
+
+}

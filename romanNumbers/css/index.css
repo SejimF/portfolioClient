@@ -1,0 +1,142 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    /* display: grid;
+    grid-template-rows: 10% 80% 10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #4670F8;
+    background: linear-gradient(250deg, #EEEEFF, #DCE9FF);
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* grid-area: nav; */
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.headNav {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #4670F8;
+}
+
+li.activated a {
+    color: #97AFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#numberOutput {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    word-break: break-all;
+}
+
+.convertor {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.roman {
+    display: block;
+}
+
+.arabic {
+    display: none;
+}
+
+.romanInput {
+    display: flex;
+}
+
+.arabicInput {
+    display: none;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    margin: 3rem 0 2rem 0;
+}
+
+input {
+    padding: .7em;
+    padding-left: 2em;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+    border: 1px solid #4670F8;
+    outline: none;
+}
+
+button {
+    width: 150px;
+    border-radius: 0 15px 15px 0;
+    background: #4670F8;
+    border: none;
+    border: 1px solid #4670F8;
+    color: white;
+    font-weight: 900;
+    outline: none;
+}
+
+.history p {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    #numberOutput {
+        font-size: 10rem;
+    }
+}

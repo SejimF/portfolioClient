@@ -1,0 +1,48 @@
+{
+  "name": "portfolioclient",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf css",
+    "compileAboweFold": "node-sass --output-style=expanded --source-map=true scss/aboweFold.scss css/aboweFold.css",
+    "compileRestStyles": "node-sass --output-style=expanded --source-map=true scss/restStyles.scss css/restStyles.css",
+    "compileAll": "npm run compileAboweFold && npm run compileRestStyles",
+    "prefixAboweFold": "postcss css/aboweFold.css --use=autoprefixer --map=false --output=css/aboweFold.css",
+    "prefixRestStyles": "postcss css/restStyles.css --use=autoprefixer --map=false --output=css/restStyles.css",
+    "prefixAll": "npm run prefixAboweFold && npm run prefixRestStyles",
+    "minifyAboweFold": "cleancss --level=1 --source-map --source-map-inline-sources --output css/aboweFold.min.css css/aboweFold.css",
+    "minifyRestStyles": "cleancss --level=1 --source-map --source-map-inline-sources --output css/restStyles.min.css css/restStyles.css",
+    "minifyAll": "npm run minifyAboweFold && npm run minifyRestStyles",
+    "minifyJS": "uglifyjs ./scriptsUncopresed/stopPreloadTransitionsOnLoad.js ./scriptsUncopresed/imageGallery.js ./scripts/langSetup.js ./scriptsUncopresed/projects.js  ./scriptsUncopresed/headerController.js ./scriptsUncopresed/main.js ./scriptsUncopresed/skills.js ./scriptsUncopresed/contactMe.js ./scriptsUncopresed/dropDown.js  --compress --warn --output ./scripts/compressed.min.js",
+    "devAboweFold": "npm run compileAboweFold -- --watch",
+    "devRestStyles": "npm run compileRestStyles -- --watch",
+    "copyNewsProject": "copyfiles  -e ./newsClient/node_modules/** -e ./newsClient/scss/** ./newsClient/** deployFolder",
+    "copyGreeceProject": "copyfiles  -e ./greeceClient/node_modules/** -e ./greeceClient/scss/** ./greeceClient/** deployFolder",
+    "copymainFilesToDeploy": "copyfiles *.html ./css/aboweFold.min.css ./css/restStyles.min.css ./scripts/** ./public/**  deployFolder",
+    "copyAll": "npm run copymainFilesToDeploy && npm run copyGreeceProject && npm run copyNewsProject",
+    "build": "npm run clean && npm run compileAll && npm run prefixAll && npm run minifyAll"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "keywords": [
+    "K.Maxim"
+  ],
+  "author": "K.Maxim",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "clean-css-cli": "^4.3.0",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "firebase": "^6.2.4",
+    "node-sass": "^4.12.0"
+  }
+}

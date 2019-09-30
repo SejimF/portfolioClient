@@ -1,0 +1,325 @@
+
+.images-carousel {
+    position: relative;
+    
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.images-carousel span {
+    position: absolute;
+    font-size: 45px;
+    font-family: 'East Sea Dokdo', cursive;
+    z-index: 3;
+}
+
+.arrows {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transition: opacity 1s;
+    opacity: 1;
+    color: #10617a;
+}
+
+.left-arrow {
+    left: -15px;
+}
+
+.left-arrow::before {
+    content: "\f054";
+    position: absolute;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    transform: rotate(180deg);
+    // background: url(../../public/imageGallery/arrow.svg) no-repeat;
+    // background-size: contain;
+    top: 40%;
+    left: 10%;
+    
+}
+
+.right-arrow {
+    right: -15px;
+}
+
+.right-arrow::before {
+    content: "\f054";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    // background: url(../../public/imageGallery/arrow.svg) no-repeat;
+    // background-size: contain;
+    top: 40%;
+    right: 10%;
+    
+}
+
+.hideArrow {
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.carousel-image-container{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    position: absolute;
+    width: 90%;
+    height: fit-content;
+    overflow: hidden;
+    -webkit-transition: opacity .5s, z-index .5s, width .5s,  -webkit-transform .5s;
+    transition: opacity .5s, z-index .5s, width .5s,  -webkit-transform .5s;
+    transition: transform .5s,  opacity .5s, z-index .5s, width .5s;
+    transition: transform .5s,  opacity .5s, z-index .5s, width .5s,  -webkit-transform .5s;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.prev-hidden-image {
+    z-index: -2;
+    width: 60%;
+    -webkit-transform: translateY(3%) translateX(-40%);
+            transform: translateY(3%) translateX(-40%);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+
+.prev-image{
+    z-index: 1;
+    width: 80%;
+    -webkit-transform: translateY(3%) translateX(-20%);
+            transform: translateY(3%) translateX(-20%);
+}
+
+.current-image{
+    z-index: 2;
+    -webkit-transform:translateY(0%)  translateX(0%);
+            transform:translateY(0%)  translateX(0%);
+}
+
+.next-image{
+    z-index: 1;
+    width: 80%;
+    -webkit-transform: translateY(3%) translateX(20%);
+            transform: translateY(3%) translateX(20%);
+}
+
+.next-hidden-image {
+    z-index: -2;
+    width: 60%;
+    -webkit-transform: translateY(3%) translateX(40%);
+            transform: translateY(3%) translateX(40%);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////// */
+
+img {
+    width: 100%;
+}
+
+
+
+
+       /*MEDIA */
+
+@media screen and (min-width: 360px) { 
+    .images-carousel {
+        height: 155px;
+    }
+
+    .prev-image {
+        -webkit-transform: translateY(5%) translateX(-40%);
+                transform: translateY(5%) translateX(-40%);
+    }
+    .next-image{
+        -webkit-transform: translateY(5%) translateX(40%);
+                transform: translateY(5%) translateX(40%);
+    }
+
+    .prev-hidden-image {
+        -webkit-transform: translateY(5%) translateX(-60%);
+                transform: translateY(5%) translateX(-60%);
+    }
+
+    .next-hidden-image {
+        -webkit-transform: translateY(5%) translateX(60%);
+                transform: translateY(5%) translateX(60%);
+    }
+
+ }
+
+ @media screen and (min-width: 760px) {
+     
+    .images-carousel {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    }
+
+    .carousel-image-container{
+        -webkit-transition: left 1s, opacity 1s, z-index 1s, width 1s, -webkit-transform 1s;
+        transition: left 1s, opacity 1s, z-index 1s, width 1s, -webkit-transform 1s;
+        transition: transform 1s, left 1s, opacity 1s, z-index 1s, width 1s;
+        transition: transform 1s, left 1s, opacity 1s, z-index 1s, width 1s, -webkit-transform 1s;
+    }
+
+    .current-image {
+        width: 60%;
+    }
+
+    .prev-image {
+        width: 50%;
+        -webkit-transform: translateY(10%) translateX(-40%);
+                transform: translateY(10%) translateX(-40%);
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .next-image{
+        width: 50%;
+        -webkit-transform: translateY(10%) translateX(40%);
+                transform: translateY(10%) translateX(40%);
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+
+    .prev-hidden-image {
+        -webkit-transform: translateY(10%) translateX(-60%);
+                transform: translateY(10%) translateX(-60%);
+        width: 45%;
+    }
+
+    .next-hidden-image {
+        width: 45%;
+        -webkit-transform: translateY(10%) translateX(60%);
+                transform: translateY(10%) translateX(60%);
+    }
+ }
+
+
+ @media screen and (min-width: 1024px) { 
+    .current-image {
+        width: 40%;
+    }
+
+    .prev-image {
+        width: 30%;
+        -webkit-transform: translateY(10%) translateX(-80%);
+                transform: translateY(10%) translateX(-80%);
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .next-image{
+        width: 30%;
+        -webkit-transform: translateY(10%) translateX(80%);
+                transform: translateY(10%) translateX(80%);
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+
+    .prev-hidden-image {
+        -webkit-transform: translateY(40%) translateX(-210%);
+                transform: translateY(40%) translateX(-210%);
+        width: 20%;
+    }
+
+    .next-hidden-image {
+        width: 20%;
+        -webkit-transform: translateY(40%) translateX(210%);
+                transform: translateY(40%) translateX(210%);
+    }
+ }
+
+
+ @media screen and (min-width: 1440px) { 
+        .current-image {
+        width: 30%;
+    }
+
+    .prev-image {
+        width: 25%;
+        -webkit-transform: translateY(10%) translateX(-110%);
+                transform: translateY(10%) translateX(-110%);
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .next-image{
+        width: 25%;
+        -webkit-transform: translateY(10%) translateX(110%);
+                transform: translateY(10%) translateX(110%);
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+
+    .prev-hidden-image {
+        -webkit-transform: translateY(25%) translateX(-210%);
+                transform: translateY(25%) translateX(-210%);
+        width: 20%;
+    }
+
+    .next-hidden-image {
+        width: 20%;
+        -webkit-transform: translateY(25%) translateX(210%);
+                transform: translateY(25%) translateX(210%);
+    }
+ }
+
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .carousel-image-container {
+        transform: translateX(-50%);
+    }
+
+    .prev-image {
+        transform: translateY(10%) translateX(-160%);
+}
+.next-image{
+        transform: translateY(10%) translateX(50%);
+}
+
+.current-image{
+        transform:translateY(0%)  translateX(-50%);
+}
+
+.prev-hidden-image {
+        transform: translateY(25%) translateX(-250%);
+}
+
+.next-hidden-image {
+        transform: translateY(25%) translateX(150%);
+}
+ }
+
+ @media screen and (min-width: 1440px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     
+    .prev-image {
+                transform: translateY(10%) translateX(-160%);
+    }
+    .next-image{
+                transform: translateY(10%) translateX(50%);
+    }
+
+    .current-image{
+                transform:translateY(0%)  translateX(-60%);
+    }
+
+    .prev-hidden-image {
+                transform: translateY(25%) translateX(-250%);
+    }
+
+    .next-hidden-image {
+                transform: translateY(25%) translateX(150%);
+    }
+ }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./scripts/script.js"></script>
+
+    <title>Roman Number Converter</title>
+</head>
+<body>
+    <header><nav>
+        <ul class="headNav">
+            <li class="toRoman activated">
+               <a href="#" onclick="fromRoman()">CONVERT TO ROMAN NUMBERS</a> 
+            </li>
+            <li  class="toArabic">
+                    <a href="#" onclick="fromArabic()">CONVERT TO ARABIC NUMBERS</a>    
+            </li>
+        </ul>
+    </nav></header>
+    <main>
+        <section class="inputs">
+            <!-- <div class="convertor"> -->
+                <form  class="convertor romanInput" target="hiddenFrame" onsubmit="convertToRoman(document.getElementById('romanInput').value)">
+                       <input type="number" id="romanInput" placeholder="Enter number here" max="5999">
+                        <button type="submit">CONVERT</button>
+                </form> 
+
+                <form  class="convertor arabicInput" target="hiddenFrame" onsubmit="convertToArabic(document.getElementById('arabInput').value)">
+                        <input type="text" id="arabInput" placeholder="Enter number here">
+                        <button type="submit">CONVERT</button>
+                </form>
+                <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+            <!-- </div> -->
+        </section>
+        <span id="numberOutput"  class="roman">IV</span>
+        <span id="numberOutput" class="arabic">4</span> 
+        <section class="history">
+            <p>
+                    The use of Roman numerals continued long after the decline of the Roman Empire. From the 14th century on, Roman numerals began to be replaced in most contexts by the more convenient Arabic numerals; however, this process was gradual, and the use of Roman numerals persists in some minor applications to this day.
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <ul class="footer">
+            <li><a href="#">Roman numbers converter</a></li>
+            <li><a href="#">Made with love by Kolodko Maxim</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
