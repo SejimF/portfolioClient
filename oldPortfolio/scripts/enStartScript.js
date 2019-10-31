@@ -33,7 +33,7 @@ function loadJQueryRelatedScripts() {
     setTimeout(function () {
 
         var resizeSensor = document.createElement("script");
-        resizeSensor.src = "./oldPortfolio/scripts/ResizeSensor.js";
+        resizeSensor.src = "../oldPortfolio/scripts/ResizeSensor.js";
         document.body.appendChild(resizeSensor);
 
         initImages();

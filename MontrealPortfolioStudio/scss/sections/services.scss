@@ -1,0 +1,76 @@
+.servicesQuote {
+    height: 14.4em;
+    background: $secondaryColor;
+}
+
+.quote {
+    width: 56em;
+    height: 4em;
+    font-size: 1.126em;
+    letter-spacing: 0.125em;
+    line-height: 1.34em;
+    color: $colorText;
+    font-family: "Abel";
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    padding-top: 4.9em;
+    padding-left: 1.2em;
+}
+
+.services_fields {
+    
+    height: 41.4375em;
+    padding: 0px 17.55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 7.4em;
+}
+
+.services_container-field {
+    width: 30%;
+}
+
+.service_img_container {
+    width: 77px;
+    height: 77px;
+    background: $secondaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_header {
+    font-size: 3.125em;
+    letter-spacing: 4px;
+    line-height: 76px;
+    color: $secondaryColor;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 0.55em;
+}
+
+.services_container-field p {
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: $colorText;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 1.5em;
+}
+
+.services_button {
+    height: 70px;
+    width: 368px;
+    margin-top: 5.2em;
+    font-size: 17px;
+    color: $colorText;
+}

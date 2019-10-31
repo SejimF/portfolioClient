@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-start;
     overflow: hidden;
 }
 
@@ -27,8 +27,8 @@
     height: auto;
     min-height: 500px;
     flex-direction: column;
-    align-items: center;
-    justify-content: end;
+    align-items: flex-start;
+    justify-content: flex-start;
     background: linear-gradient(44deg, #9ECCFF, #EFD0F8);
     border-bottom: 5px solid $activeLink;
     border-bottom-left-radius: 5px;
@@ -76,10 +76,10 @@
 .project_info {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-start;
     justify-content: center;
     color: #536E95;
-    
+    width: 100%;
 }
 
 .project_header {
@@ -276,8 +276,12 @@ hr {
         height: 70%;
         width: 90%;
         flex-direction: row;
-        align-items: end;
         border-bottom-left-radius: 30px;
+    }
+
+    .prj_techs {
+        margin-top: -3rem;
+        margin-bottom: 2rem;
     }
 
     .project_first_row {
@@ -298,6 +302,7 @@ hr {
 
     .project_info {
         width: 100%;
+        transform: translateX(-16px) scale(1.05) translateY(10px);
     }
 
     .open_git_project_button {

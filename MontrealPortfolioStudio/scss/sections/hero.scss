@@ -1,0 +1,36 @@
+.hero {
+    height: 907px;
+    padding: 0px 19.7% 0 19.6%;
+    background: $mainColor;
+}
+
+.hero_header {
+    font-size: 176px;
+    letter-spacing: 13px;
+    line-height: 180px;
+    color: $secondaryColor;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 13%;
+}
+
+.hero_paragraph {
+    font-size: 15px;
+    letter-spacing: 1.07px;
+    line-height: 25px;
+    color: $thirdColorText;
+    font-family: "Abel";
+    font-weight: 400;
+    width: 62.9%;
+    padding-top: 0.7%;
+    margin-left: -0.3%;
+    word-break: break-all;
+}
+
+
+.hero_button {
+    width: 232px;
+    height: 71px;
+    margin-top: 3.6%;
+    margin-left: -3px;
+}

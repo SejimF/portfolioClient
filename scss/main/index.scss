@@ -25,9 +25,6 @@ body {
     position: relative;
 }
 
-
-
-
 .mainColorText {
     color: $activeLink;
 }
@@ -57,8 +54,13 @@ main {
     transition: border-color .5s ease-in;
 }
 
+.mobile {
+    display: block;
+}
 
-
+.desktop {
+    display: none;
+}
 
 @include for-tablet-up-768 { 
 
@@ -75,6 +77,18 @@ main {
 .inner_main {
     height: calc(90vh - 70px);
 }
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+
+}
+
+@include for-tablet-up-900 {
 
 }
 

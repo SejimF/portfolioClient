@@ -3,7 +3,7 @@
 
 <head>
 
-        <title>Portfolio | Kolodko Maxim | web-programming!</title>
+    <title>Portfolio | Kolodko Maxim | web-programming!</title>
 
     <meta name="description"
         content="Hello every one! I am front-end and back-end web-developer, languages i speak is HTML | CSS | SASS | JAVASCRIPT| ANGULAR 2.">
@@ -25,7 +25,7 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
 
-        <meta name="theme-color" content="#5318af" />
+    <meta name="theme-color" content="#5318af" />
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#5318af">
     <!-- iOS Safari -->
@@ -42,23 +42,25 @@
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGN6KR3ZVC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGN6KR3ZVC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-RGN6KR3ZVC');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RGN6KR3ZVC');
+    </script>
 
 
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-pref.min.css">
     <script src="./scripts/skillsPercentage.js"></script>
-    <!-- <title>Portfolio</title> -->
 </head>
 
 <body>
@@ -89,8 +91,8 @@
                     <li class="contactMe" onclick="moveToSelected(document.getElementById('contactMe'))">
                         <a href="#">Contact Me</a>
                     </li>
-                    <li class="langSetup">
-                        <a href="#">EN</a>
+                    <li class="langSetup" onclick="redirectToPage('ru')">
+                        <a href="#">RU</a>
                     </li>
                 </ul>
             </div>
@@ -112,8 +114,8 @@
                     <li class="contactMe" onclick="moveToSelected(document.getElementById('contactMe'), true)">
                         <a href="#">Contact Me</a>
                     </li>
-                    <li class="langSetup">
-                        <a href="#">EN</a>
+                    <li class="langSetup" onclick="redirectToPage('ru')">
+                        <a href="#">RU</a>
                     </li>
                 </ul>
             </div>
@@ -126,11 +128,24 @@
                     <!-- Index page -->
                     <div class="aboutMe--inner">
                         <div class="hero_img img_container ">
-                            <img draggable="false" src="public/profilePic/Hwt2qIew84Y.png" alt="">
+
+                            <img 
+                            draggable="false" 
+
+                            srcset="public/profilePic/avatar_mobile-400w.jpg 400w,
+                            public/profilePic/avatar_desktop-768w.jpg 768w"
+
+                            src="public/profilePic/avatar_desktop-768w.jpg"
+
+
+                            alt="My photo for avatar">
+
+
                         </div>
                         <div class="hero_paragraph ">
                             <h1 class="header mainColorText">Hello everyone!</h1>
-                            <p class="paragraph_text mainColorText">I'm software developer! And making my way through these
+                            <p class="paragraph_text mainColorText">I'm software developer! And making my way through
+                                these
                                 interesting and beautiful world of developing web sites. I'll help you make your web
                                 site become true or be a good member in you team!</p>
                         </div>
@@ -143,117 +158,170 @@
 
                 <section id="mySkills" class=" page nextPage">
                     <div class="mySkills--inner">
-                            <div class="soft_skills-container">
+                        <div class="soft_skills-container">
 
-                                    <div id="problem_solving--skill" class="soft_skills current_skill_container">
-                                        <div class="soft_skills--img-container">
-                                            <img draggable="false" draggable="false" src="./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash-mobile.jpg" alt="">
-                                        </div>
-                                        <div class="soft_skills--info">
-                                            <h3 class="soft_skills--header">Problem Solving</h3>
-                                            <p class="soft_skills--paragraph">I'm breaking requirements and problems in to small
-                                                steps
-                                                and solving them one by one!</p>
-                                        </div>
-                                    </div>
-            
-                                    <div id="communicating--skill" class="soft_skills next_skill_container">
-                                        <div class="soft_skills--img-container">
-                                            <img draggable="false" src="./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-mobile.jpg" alt="">
-                                        </div>
-                                        <div class="soft_skills--info">
-                                            <h3 class="soft_skills--header">Communicating</h3>
-                                            <p class="soft_skills--paragraph">I'm open, smart and nice person, we can talk about
-                                                your requirement and your project to make exactly what you want!</p>
-                                        </div>
-                                    </div>
-            
-                                    <div id="organised--skill" class="soft_skills next_skill_container">
-                                        <div class="soft_skills--img-container">
-                                            <img draggable="false" src="./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-mobile.png" alt="">
-                                        </div>
-                                        <div class="soft_skills--info">
-                                            <h3 class="soft_skills--header">Organised</h3>
-                                            <p class="soft_skills--paragraph">I am self motivated and orgonised person, making nice
-                                                and easy to understand code!</p>
-                                        </div>
-                                    </div>
-            
-                                </div>
-            
-            
-                                <div class="selectors skills_selector">
-                                    <span class="skill_circle problem_solving problem_solving--skill active"
-                                        onclick="moveToSelectedSkill(document.getElementById('problem_solving--skill'))"></span>
-                                    <span class="skill_circle communicating communicating--skill"
-                                        onclick="moveToSelectedSkill(document.getElementById('communicating--skill'))"></span>
-                                    <span class="skill_circle organised organised--skill"
-                                        onclick="moveToSelectedSkill(document.getElementById('organised--skill'))"></span>
-                                </div>
-            
-                                <div class="skills_state">
+                            <div id="problem_solving--skill" class="soft_skills current_skill_container">
+                                <div class="soft_skills--img-container">
 
-                                    <div class="skill_row">
-                                            <div class="skills_state_element cssAnimation">
-                                                    <div class="canvas-wrap">
-                                                        <canvas id="canvas" class="cssCanvas sml_scr" width="100" height="100"></canvas>
-                                                        <canvas id="canvas" class="cssCanvas big_scr" width="150" height="150"></canvas>
-                                                        <span id="procent" class="procentCss cssCanvas"></span>
-                                                    </div>
-                                                    <h2 class="cssCanvas ">CSS</h2>
-                                                </div>
-                        
-                                                <div class="skills_state_element javaScriptAnimation">
-                                                    <div class="canvas-wrap">
-                                                        <canvas id="canvas" class="javaScriptCanvas sml_scr" width="100" height="100"></canvas>
-                                                        <canvas id="canvas" class="javaScriptCanvas big_scr" width="150" height="150"></canvas>
-                                                        <span id="procent" class="procentJavaScript javaScriptCanvas"></span>
-                                                    </div>
-                                                    <h2 class="javaScriptCanvas">JavaScript</h2>
-                                                </div>
-                        
-                                                <div class="skills_state_element htmlAnimation">
-                                                    <div class="canvas-wrap">
-                                                        <canvas id="canvas" class="htmlCanvas  sml_scr" width="100" height="100"></canvas>
-                                                        <canvas id="canvas" class="htmlCanvas  big_scr" width="150" height="150"></canvas>
-                                                        <span id="procent" class="procentHtml htmlCanvas"></span>
-                                                    </div>
-                                                    <h2 class="htmlCanvas">HTML</h2>
-                                                </div>
-                                    </div>
+                                    <img draggable="false" 
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
 
-                                    <div class="skill_row">
-                                            <div class="skills_state_element angular2Animation">
-                                                    <div class="canvas-wrap">
-                                                        <canvas id="canvas" class="angular2Canvas sml_scr" width="100" height="100"></canvas>
-                                                        <canvas id="canvas" class="angular2Canvas big_scr" width="150" height="150"></canvas>
-                                                        <span id="procent" class="procentAngular2 angular2Canvas"></span>
-                                                    </div>
-                                                    <h2 class="angular2Canvas">Angular2</h2>
-                                                </div>
-                        
-                                                <div class="skills_state_element nodeJSAnimation">
-                                                    <div class="canvas-wrap">
-                                                        <canvas id="canvas" class="nodeJSCanvas sml_scr" width="100" height="100"></canvas>
-                                                        <canvas id="canvas" class="nodeJSCanvas big_scr" width="150" height="150"></canvas>
-                                                        <span id="procent" class="procentNodeJS nodeJSCanvas"></span>
-                                                    </div>
-                                                    <h2 class="nodeJSCanvas">NodeJS</h2>
-                                                </div>
-                        
-                                                <div class="skills_state_element mongoDbAnimation">
-                                                    <div class="canvas-wrap">
-                                                        <canvas id="canvas" class="mongoDbCanvas sml_scr" width="100" height="100"></canvas>
-                                                        <canvas id="canvas" class="mongoDbCanvas big_scr" width="150" height="150"></canvas>
-                                                        <span id="procent" class="procentMongoDb mongoDbCanvas"></span>
-                                                    </div>
-                                                    <h2 class="mongoDbCanvas">MongoDB</h2>
-                                                </div>
-                                    </div>
-            
+                                    data-src-set="./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash--400w.jpg 400w,
+                                    ./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash--800w.jpg 800w,
+                                    ./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash--1200w.jpg 1200w,
+                                    ./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash--1980w.jpg 1980w,
+                                    " 
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/skills/daria-nepriakhina-zoCDWPuiRuA-unsplash--1980w.jpg"
+                                    alt="photo from unsplash for problem solving skill">
 
                                 </div>
-            
+                                <div class="soft_skills--info">
+                                    <h3 class="soft_skills--header">Problem Solving</h3>
+                                    <p class="soft_skills--paragraph">I'm breaking requirements and problems in to small
+                                        steps
+                                        and solving them one by one!</p>
+                                </div>
+                            </div>
+
+                            <div id="communicating--skill" class="soft_skills next_skill_container">
+                                <div class="soft_skills--img-container">
+
+                                    <img draggable="false" 
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-400w.jpg 400w,
+                                    ./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-800w.jpg 800w,
+                                    ./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-1200w.jpg 1200w,
+                                    ./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-1980w.jpg 1980w,
+                                    "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/skills/mark-pan4ratte-UDLljVBRldc-unsplash-1980w.jpg"
+
+                                        alt="photo from unsplash for communicating skill">
+
+                                </div>
+                                <div class="soft_skills--info">
+                                    <h3 class="soft_skills--header">Communicating</h3>
+                                    <p class="soft_skills--paragraph">I'm open, smart and nice person, we can talk about
+                                        your requirement and your project to make exactly what you want!</p>
+                                </div>
+                            </div>
+
+                            <div id="organised--skill" class="soft_skills next_skill_container">
+                                <div class="soft_skills--img-container">
+
+                                    <img draggable="false"
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-400w.jpg 400w,
+                                    ./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-800w.jpg 800w,
+                                    ./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-1200w.jpg 1200w,
+                                    ./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-1980w.jpg 1980w,
+                                    "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/skills/katlyn-boone-9PeI-Q8bCXw-unsplash-1980w.jpg"
+
+                                        alt="photo from unsplash for organised skill">
+
+                                </div>
+                                <div class="soft_skills--info">
+                                    <h3 class="soft_skills--header">Organised</h3>
+                                    <p class="soft_skills--paragraph">I am self motivated and orgonised person, making
+                                        nice
+                                        and easy to understand code!</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="selectors skills_selector">
+                            <span class="skill_circle problem_solving problem_solving--skill active"
+                                onclick="moveToSelectedSkill(document.getElementById('problem_solving--skill'))"></span>
+                            <span class="skill_circle communicating communicating--skill"
+                                onclick="moveToSelectedSkill(document.getElementById('communicating--skill'))"></span>
+                            <span class="skill_circle organised organised--skill"
+                                onclick="moveToSelectedSkill(document.getElementById('organised--skill'))"></span>
+                        </div>
+
+                        <div class="skills_state">
+
+                            <div class="skill_row">
+                                <div class="skills_state_element cssAnimation">
+                                    <div class="canvas-wrap">
+                                        <canvas id="canvas" class="cssCanvas sml_scr" width="100" height="100"></canvas>
+                                        <canvas id="canvas" class="cssCanvas big_scr" width="150" height="150"></canvas>
+                                        <!-- <span id="procent" class="procentCss cssCanvas"></span> -->
+                                    </div>
+                                    <h2 class="cssCanvas ">CSS</h2>
+                                </div>
+
+                                <div class="skills_state_element javaScriptAnimation">
+                                    <div class="canvas-wrap">
+                                        <canvas id="canvas" class="javaScriptCanvas sml_scr" width="100"
+                                            height="100"></canvas>
+                                        <canvas id="canvas" class="javaScriptCanvas big_scr" width="150"
+                                            height="150"></canvas>
+                                        <!-- <span id="procent" class="procentJavaScript javaScriptCanvas"></span> -->
+                                    </div>
+                                    <h2 class="javaScriptCanvas">JavaScript</h2>
+                                </div>
+
+                                <div class="skills_state_element htmlAnimation">
+                                    <div class="canvas-wrap">
+                                        <canvas id="canvas" class="htmlCanvas  sml_scr" width="100"
+                                            height="100"></canvas>
+                                        <canvas id="canvas" class="htmlCanvas  big_scr" width="150"
+                                            height="150"></canvas>
+                                        <!-- <span id="procent" class="procentHtml htmlCanvas"></span> -->
+                                    </div>
+                                    <h2 class="htmlCanvas">HTML</h2>
+                                </div>
+                            </div>
+
+                            <div class="skill_row">
+                                <div class="skills_state_element angular2Animation">
+                                    <div class="canvas-wrap">
+                                        <canvas id="canvas" class="angular2Canvas sml_scr" width="100"
+                                            height="100"></canvas>
+                                        <canvas id="canvas" class="angular2Canvas big_scr" width="150"
+                                            height="150"></canvas>
+                                        <!-- <span id="procent" class="procentAngular2 angular2Canvas"></span> -->
+                                    </div>
+                                    <h2 class="angular2Canvas">Angular2</h2>
+                                </div>
+
+                                <div class="skills_state_element nodeJSAnimation">
+                                    <div class="canvas-wrap">
+                                        <canvas id="canvas" class="nodeJSCanvas sml_scr" width="100"
+                                            height="100"></canvas>
+                                        <canvas id="canvas" class="nodeJSCanvas big_scr" width="150"
+                                            height="150"></canvas>
+                                        <!-- <span id="procent" class="procentNodeJS nodeJSCanvas"></span> -->
+                                    </div>
+                                    <h2 class="nodeJSCanvas">NodeJS</h2>
+                                </div>
+
+                                <div class="skills_state_element mongoDbAnimation">
+                                    <div class="canvas-wrap">
+                                        <canvas id="canvas" class="mongoDbCanvas sml_scr" width="100"
+                                            height="100"></canvas>
+                                        <canvas id="canvas" class="mongoDbCanvas big_scr" width="150"
+                                            height="150"></canvas>
+                                        <!-- <span id="procent" class="procentMongoDb mongoDbCanvas"></span> -->
+                                    </div>
+                                    <h2 class="mongoDbCanvas">MongoDB</h2>
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </div>
 
                 </section>
@@ -261,249 +329,450 @@
                 <!-- Project Page -->
 
                 <section id="myProjects" class="  page nextPageHidden">
-                        <!-- <div class="contactMe--inner"> -->
 
-                                <!-- <div class="project_carousel"> -->
-                                    <div class="myProjects--inner">
+                    <div class="myProjects--inner">
 
-                                            <article id="news" class="project current_project_container projectAnim">
-                
-                                                    <div class="project_first_row">
-                                                        <div class="prj_img_container">
-                                                            <img draggable="false" src="./public/projects/Screenshot_2019-08-14 News page(1).jpg" alt="">
-                                                        </div>
-                                                        <div class="prj_techs">
-                                                            <button class="prj_techs--buttons  cssButton">CSS</button>
-                                                            <button class="prj_techs--buttons  htmlButton">HTML</button>
-                                                            <button class="prj_techs--buttons  javaScriptButton">JavaScript</button>
-                                                            <button class="prj_techs--buttons  nodeJSButton">NodeJS</button>
-                                                        </div>
-                                                    </div>
+                        <article id="news" class="project current_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false"
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/News-400w.jpg 400w,
+                                    ./public/projects/News-800w.jpg 800w,
+                                    ./public/projects/News-1200w.jpg 1200w,
+                                    ./public/projects/News-1386w.jpg 1386w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/News-1386w.jpg"
+
+                                        alt="Photo from my news project">
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons  cssButton">CSS</button>
+                                    <button class="prj_techs--buttons  htmlButton">HTML</button>
+                                    <button class="prj_techs--buttons  javaScriptButton">JavaScript</button>
+                                    <button class="prj_techs--buttons  nodeJSButton">NodeJS</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">News website (front-end)</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Simple responsible page for news from https://newsapi.org
+                                </p>
+                            </div>
+
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank"
+                                    href="https://github.com/SejimF/portfolioClient/tree/master/newsClient">GITHUB</a>
+                            </button>
+
+                            <button class="open_project_button"> <a target="_blank"
+                                    href="../../newsClient/index.html">See Website</a> <i
+                                    class="far fa-arrow-alt-circle-right"></i></button>
+
+                        </article>
+
+                        <article id="lets-run" class="project next_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false"
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/LetsRun-400w.jpg 400w,
+                                    ./public/projects/LetsRun-800w.jpg 800w,
+                                    ./public/projects/LetsRun-1200w.jpg 1200w,
+                                    ./public/projects/LetsRun-1663w.jpg 1663w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/LetsRun-1663w.jpg"
+
+                                        alt="Photo from my Lets-run project">
+
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                    <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                    <button class="prj_techs--buttons nodeJSButton">NodeJS</button>
+                                    <button class="prj_techs--buttons angular2Button">Angular2</button>
+                                    <button class="prj_techs--buttons mongoDbButton">MongoDB</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">Let's Run</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Social media for runners that can be used on smartphones,
+                                    tablets and desktop. Lets-run allows users to publish running events join the
+                                    events, leave comments,add to favorites and also has a build-in forum.</p>
+                            </div>
+
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank" href="https://github.com/vkolon01/Lets-Run">GITHUB</a> </button>
+
+                            <button class="open_project_button"> <a target="_blank" href="https://let-run-today.tk/">See
+                                    Website</a> <i class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
+
+                        <article id="greece" class="project next_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false"
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/greece-400w.jpg 400w,
+                                    ./public/projects/greece-800w.jpg 800w,
+                                    ./public/projects/greece-1200w.jpg 1200w,
+                                    ./public/projects/greece-1386w.jpg 1386w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/greece-1386w.jpg"
+
+                                        alt="Photo from my Greece project">
+
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                    <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">Travel website for Santorini (front-end)</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Responsible page for Santorini tour</p>
+                            </div>
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank"
+                                    href="https://github.com/SejimF/portfolioClient/tree/master/greeceClient">GITHUB</a>
+                            </button>
+                            <button class="open_project_button"> <a target="_blank"
+                                    href="../../greeceClient/index.html">See Website</a> <i
+                                    class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
+
+                        <article id="sovushka" class="project next_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false"
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/sovushka-toy-400w.jpg 400w,
+                                    ./public/projects/sovushka-toy-800w.jpg 800w,
+                                    ./public/projects/sovushka-toy-1200w.jpg 1200w,
+                                    ./public/projects/sovushka-toy-1663w.jpg 1663w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/sovushka-toy-1663w.jpg"
+
+                                        alt="Photo from my sovyshka toy project">
+
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                    <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">Sovushka-toy</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Simple responsible website for handmade toys, have main
+                                    page with gallery</p>
+                            </div>
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank" href="https://github.com/SejimF/jeniaPortfolio">GITHUB</a> </button>
+                            <button class="open_project_button"> <a target="_blank" href="https://sovushka-toy.tk">See
+                                    Website</a> <i class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
+
+                        <article id="snakes" class="project next_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false" 
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/snakes-400w.jpg 400w,
+                                    ./public/projects/snakes-800w.jpg 800w,
+                                    ./public/projects/snakes-1200w.jpg 1200w,
+                                    ./public/projects/snakes-1663w.jpg 1663w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/snakes-1663w.jpg"
+
+                                        alt="Photo from my snakes project">
+
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                    <button class="prj_techs--buttons angular2Button">Angular2</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">Roman snakes</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Simple responsible website for snakes for one my friend,
+                                    have main page and gallery</p>
+                            </div>
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank" href="https://github.com/SejimF/snakeApp">GITHUB</a> </button>
+                            <button class="open_project_button"> <a target="_blank"
+                                    href="https://snakeroman-97950.firebaseapp.com/">See Website</a> <i
+                                    class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
+
+                        <article id="romanNumbers" class="project next_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false" 
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/roman_number-400w.jpg 400w,
+                                    ./public/projects/roman_number-800w.jpg 800w,
+                                    ./public/projects/roman_number-1200w.jpg 1200w,
+                                    ./public/projects/roman_number-1391w.jpg 1391w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/roman_number-1391w.jpg"
+                                    
+                                        alt="Photo from my roman numbers project">
+
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                    <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">Roman number Converter</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Simple responsible website to convert roman numbers to
+                                    arabic and vica versa.</p>
+                            </div>
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank"
+                                    href="https://github.com/SejimF/portfolioClient/tree/master/romanNumbers">GITHUB</a>
+                            </button>
+                            <button class="open_project_button"> <a target="_blank"
+                                    href="../../romanNumbers/index.html">See Website</a> <i
+                                    class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
+
+                        <article id="firefly" class="project next_project_container projectAnim">
+
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
+
+                                    <img draggable="false" 
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+
+                                    data-src-set="./public/projects/FireflyFromFreePSD400w.jpg 400w,
+                                    ./public/projects/FireflyFromFreePSD800w.jpg 800w,
+                                    ./public/projects/FireflyFromFreePSD1386w.jpg 1386w,
+                                    ./public/projects/FireflyFromFreePSD1680w.jpg 1680w,
+                                             "
+
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/FireflyFromFreePSD1680w.jpg"
+                                    
+                                        alt="Photo from my firefly project">
+
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                </div>
+                            </div>
+
+                            <div class="project_info">
+                                <h3 class="project_header">Firefly PSD to HTML work</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Simple responsible page converted from PSD to HTML.</p>
+                            </div>
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank"
+                                    href="https://github.com/SejimF/portfolioClient/tree/master/romanNumbers">GITHUB</a>
+                            </button>
+                            <button class="open_project_button"> <a target="_blank"
+                                    href="../../fireflyFreeDesign/index.html">See Website</a> <i
+                                    class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
+
                         
-                                                    <div class="project_info">
-                                                        <h3 class="project_header">News website (front-end)</h3>
-                                                        <hr class="prj-hr">
-                                                        <p class="project_paragraph">Simple responsible page for news from https://newsapi.org</p>
-                                                    </div>
+                        <article id="montreal" class="project next_project_container projectAnim">
 
-                                                    <button class="open_git_project_button open_project_button"><i
-                                                        class="fab fa-github"></i> <a  target="_blank" href="https://github.com/SejimF/portfolioClient/tree/master/newsClient">GITHUB</a> </button>
+                            <div class="project_first_row">
+                                <div class="prj_img_container">
 
-                                                    <button class="open_project_button"> <a target="_blank" href="../../newsClient/index.html">See Website</a> <i
-                                                            class="far fa-arrow-alt-circle-right"></i></button>
+                                    <img draggable="false" 
+                                    
+                                    srcset="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
 
-                                                </article>
-                        
-                                                <article id="lets-run" class="project next_project_container projectAnim">
-                        
-                                                    <div class="project_first_row">
-                                                        <div class="prj_img_container">
-                                                            <img draggable="false" src="./public/projects/Screenshot_2019-08-14 LetsRun.jpg" alt="">
-                                                        </div>
-                                                        <div class="prj_techs">
-                                                            <button class="prj_techs--buttons cssButton">CSS</button>
-                                                            <button class="prj_techs--buttons htmlButton">HTML</button>
-                                                            <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
-                                                            <button class="prj_techs--buttons nodeJSButton">NodeJS</button>
-                                                            <button class="prj_techs--buttons angular2Button">Angular2</button>
-                                                            <button class="prj_techs--buttons mongoDbButton">MongoDB</button>
-                                                        </div>
-                                                    </div>
-                        
-                                                    <div class="project_info">
-                                                        <h3 class="project_header">Let's Run</h3>
-                                                        <hr class="prj-hr">
-                                                        <p class="project_paragraph">Social media for runners that can be used on smartphones, tablets and desktop. Lets-run allows users to publish running events join the events, leave comments,add to favorites and also has a build-in forum.</p>
-                                                    </div>
+                                    data-src-set="./public/projects/MontrealPortfolioStudio400w.jpg 400w,
+                                    ./public/projects/MontrealPortfolioStudio800w.jpg 800w,
+                                    ./public/projects/MontrealPortfolioStudio1386w.jpg 1386w,
+                                    ./public/projects/MontrealPortfolioStudio1663w.jpg 1663w,
+                                             "
 
-                                                    <button class="open_git_project_button open_project_button"><i
-                                                        class="fab fa-github"></i> <a target="_blank" href="https://github.com/vkolon01/Lets-Run">GITHUB</a> </button>
+                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                    data-src="./public/projects/MontrealPortfolioStudio1663w.jpg"
+                                    
+                                        alt="Photo from my montreal project">
 
-                                                    <button class="open_project_button"> <a target="_blank" href="https://let-run-today.tk/">See Website</a> <i
-                                                            class="far fa-arrow-alt-circle-right"></i></button>
-                                                </article>
-                        
-                                                <article id="greece" class="project next_project_container projectAnim">
-                        
-                                                    <div class="project_first_row">
-                                                        <div class="prj_img_container">
-                                                            <img draggable="false" src="./public/projects/Screenshot_2019-08-14 Discover Greece.jpg" alt="">
-                                                        </div>
-                                                        <div class="prj_techs">
-                                                            <button class="prj_techs--buttons cssButton">CSS</button>
-                                                            <button class="prj_techs--buttons htmlButton">HTML</button>
-                                                            <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
-                                                        </div>
-                                                    </div>
-                         
-                                                    <div class="project_info">
-                                                        <h3 class="project_header">Travel website for Santorini (front-end)</h3>
-                                                        <hr class="prj-hr">
-                                                        <p class="project_paragraph">Responsible page for Santorini tour</p>
-                                                    </div>
-                                                    <button class="open_git_project_button open_project_button"><i
-                                                        class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/portfolioClient/tree/master/greeceClient">GITHUB</a> </button>
-                                                    <button class="open_project_button"> <a target="_blank" href="../../greeceClient/index.html">See Website</a> <i
-                                                            class="far fa-arrow-alt-circle-right"></i></button>
-                                                </article>
+                                </div>
+                                <div class="prj_techs">
+                                    <button class="prj_techs--buttons cssButton">CSS</button>
+                                    <button class="prj_techs--buttons htmlButton">HTML</button>
+                                </div>
+                            </div>
 
-                                                <article id="sovushka" class="project next_project_container projectAnim">
-                        
-                                                    <div class="project_first_row">
-                                                        <div class="prj_img_container">
-                                                            <img draggable="false" src="./public/projects/sovushka-toy.jpg" alt="">
-                                                        </div>
-                                                        <div class="prj_techs">
-                                                            <button class="prj_techs--buttons cssButton">CSS</button>
-                                                            <button class="prj_techs--buttons htmlButton">HTML</button>
-                                                            <button class="prj_techs--buttons javaScriptButton">JavaScript</button>
-                                                        </div>
-                                                    </div>
-                         
-                                                    <div class="project_info">
-                                                        <h3 class="project_header">Sovushka-toy</h3>
-                                                        <hr class="prj-hr">
-                                                        <p class="project_paragraph">Simple responsible website for handmade toys, have main page with gallery</p>
-                                                    </div>
-                                                    <button class="open_git_project_button open_project_button"><i
-                                                        class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/jeniaPortfolio">GITHUB</a> </button>
-                                                    <button class="open_project_button"> <a target="_blank" href="https://sovushka-toy.tk">See Website</a> <i
-                                                            class="far fa-arrow-alt-circle-right"></i></button>
-                                                </article>
-                        
-                                                <article id="snakes" class="project next_project_container projectAnim">
-                        
-                                                        <div class="project_first_row">
-                                                            <div class="prj_img_container">
-                                                                <img draggable="false" src="./public/projects/snakes.jpg" alt="">
-                                                            </div>
-                                                            <div class="prj_techs">
-                                                                <button class="prj_techs--buttons cssButton">CSS</button>
-                                                                <button class="prj_techs--buttons htmlButton">HTML</button>
-                                                                <button class="prj_techs--buttons angular2Button">Angular2</button>
-                                                            </div>
-                                                        </div>
-                             
-                                                        <div class="project_info">
-                                                            <h3 class="project_header">Roman snakes</h3>
-                                                            <hr class="prj-hr">
-                                                            <p class="project_paragraph">Simple responsible website for snakes for one my friend, have main page and gallery</p>
-                                                        </div>
-                                                        <button class="open_git_project_button open_project_button"><i
-                                                            class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/snakeApp">GITHUB</a> </button>
-                                                        <button class="open_project_button"> <a target="_blank" href="https://snakeroman-97950.firebaseapp.com/">See Website</a> <i
-                                                                class="far fa-arrow-alt-circle-right"></i></button>
-                                                    </article>
+                            <div class="project_info">
+                                <h3 class="project_header">Montreal PSD to HTML work</h3>
+                                <hr class="prj-hr">
+                                <p class="project_paragraph">Simple responsible page converted from PSD to HTML.</p>
+                            </div>
+                            <button class="open_git_project_button open_project_button"><i class="fab fa-github"></i> <a
+                                    target="_blank"
+                                    href="https://github.com/SejimF/portfolioClient/tree/master/romanNumbers">GITHUB</a>
+                            </button>
+                            <button class="open_project_button"> <a target="_blank"
+                                    href="../../MontrealPortfolioStudio/index.html">See Website</a> <i
+                                    class="far fa-arrow-alt-circle-right"></i></button>
+                        </article>
 
-                                                    <article id="romanNumbers" class="project next_project_container projectAnim">
-                        
-                                                            <div class="project_first_row">
-                                                                <div class="prj_img_container">
-                                                                    <img draggable="false" src="./public/projects/Screenshot_2019-09-30 Roman Number Converter.png" alt="">
-                                                                </div>
-                                                                <div class="prj_techs">
-                                                                    <button class="prj_techs--buttons cssButton">CSS</button>
-                                                                    <button class="prj_techs--buttons htmlButton">HTML</button>
-                                                                    <button class="prj_techs--buttons angular2Button">Angular2</button>
-                                                                </div>
-                                                            </div>
-                                 
-                                                            <div class="project_info">
-                                                                <h3 class="project_header">Roman number Converter</h3>
-                                                                <hr class="prj-hr">
-                                                                <p class="project_paragraph">Simple responsible website to convert roman numbers to arabic and vica versa.</p>
-                                                            </div>
-                                                            <button class="open_git_project_button open_project_button"><i
-                                                                class="fab fa-github"></i> <a target="_blank" href="https://github.com/SejimF/snakeApp">GITHUB</a> </button>
-                                                            <button class="open_project_button"> <a target="_blank" href="../../romanNumbers/index.html">See Website</a> <i
-                                                                    class="far fa-arrow-alt-circle-right"></i></button>
-                                                        </article>
 
-                                            <!-- </div> -->
-                                            <!-- <button style="background: red; padding: 40px">How are you</button> -->
-                                            <div class="prj_selector">
 
-                                                <span class="prj_circle first_project_in_list news active"
-                                                    onclick="moveToSelectedProject(document.getElementById('news'))"></span>
+                        <div class="prj_selector">
 
-                                                <span class="prj_circle lets-run"
-                                                    onclick="moveToSelectedProject(document.getElementById('lets-run'))"></span>
+                            <span class="prj_circle first_project_in_list news active"
+                                onclick="moveToSelectedProject(document.getElementById('news'))"></span>
 
-                                                <span class="prj_circle greece"
-                                                    onclick="moveToSelectedProject(document.getElementById('greece'))"></span>
+                            <span class="prj_circle lets-run"
+                                onclick="moveToSelectedProject(document.getElementById('lets-run'))"></span>
 
-                                                    <span class="prj_circle sovushka"
-                                                    onclick="moveToSelectedProject(document.getElementById('sovushka'))"></span>
+                            <span class="prj_circle greece"
+                                onclick="moveToSelectedProject(document.getElementById('greece'))"></span>
 
-                                                    
-                                                    <span class="prj_circle snakes"
-                                                    onclick="moveToSelectedProject(document.getElementById('snakes'))"></span>
-                                            </div>
+                            <span class="prj_circle sovushka"
+                                onclick="moveToSelectedProject(document.getElementById('sovushka'))"></span>
 
+                            <span class="prj_circle snakes"
+                                onclick="moveToSelectedProject(document.getElementById('snakes'))"></span>
+
+                            <span class="prj_circle romanNumbers"
+                                onclick="moveToSelectedProject(document.getElementById('romanNumbers'))"></span>
+                                
+                                <span class="prj_circle firefly"
+                                onclick="moveToSelectedProject(document.getElementById('firefly'))"></span>
+                                <span class="prj_circle montreal"
+                                onclick="moveToSelectedProject(document.getElementById('montreal'))"></span>
+                        </div>
+
+                    </div>
+
+
+
+                </section>
+
+                <section id="contactMe" class=" page nextPageHidden">
+
+                    <div class="contactMe--inner">
+
+                        <h3 class="contact_me_header mainColorText">Contact Me</h3>
+
+                        <form id="formContainer" target="hiddenFrame" onsubmit="sendEmail();">
+                            <div class="input_data">
+                                <label for="name">Enter Your Name:</label>
+                                <input type="text" id="contact_me-input--name" name="name" placeholder="Kolodko Maxim"
+                                    required>
+                            </div>
+
+                            <div class="input_data">
+                                <label for="email">Enter Your Email:</label>
+                                <input type="email" id="contact_me-input--email" name="email"
+                                    placeholder="example@.email.com" required>
+                            </div>
+
+                            <div class="input_data">
+                                <label for="subject">Enter Your Subject:</label>
+                                <input type="text" id="contact_me-input--subject" name="subject"
+                                    placeholder="Your Subject Here" required>
+                            </div>
+                            <input id="contact_me-input--lang" type="hidden" name="lang" value="en">
+                            <div class="area_data">
+                                <div class="area_data--inner">
+                                    <label for="message">Enter Your Message:</label>
+                                    <!-- <input > -->
+                                    <div class="textarea_with_a_button">
+                                        <textarea id="contact_me-input--message" type="text"
+                                            placeholder="Your Message Here" name="message" cols="20" rows="5" required
+                                            minlength="5"></textarea>
+                                        <button type="submit" class="contact_me--button sendMessage">Send Me A
+                                            Message</button>
+                                        <button type="submit" class="contact_me--button messageSending">Collecting the
+                                            data from inputs</button>
+                                        <button type="submit" class="contact_me--button messageSended">Message
+                                            Sended</button>
+                                        <button type="submit" class="contact_me--button messageError">Error, try
+                                            again</button>
                                     </div>
 
-                                       
-                
-                                </section>
-                
-                                <section id="contactMe" class=" page nextPageHidden">
-                
-                                    <div class="contactMe--inner">
-                
-                                        <h3 class="contact_me_header mainColorText">Contact Me</h3>
-                
-                                        <form id="formContainer" target="hiddenFrame" onsubmit="sendEmail();">
-                                            <div class="input_data">
-                                                <label for="name">Enter Your Name:</label>
-                                                <input type="text" id="contact_me-input--name" name="name" placeholder="Kolodko Maxim" required>
-                                            </div>
-                
-                                            <div class="input_data">
-                                                <label for="email">Enter Your Email:</label>
-                                                <input type="email" id="contact_me-input--email" name="email" placeholder="example@.email.com" required>
-                                            </div>
-                
-                                            <div class="input_data">
-                                                <label for="subject">Enter Your Subject:</label>
-                                                <input type="text" id="contact_me-input--subject" name="subject" placeholder="Your Subject Here" required>
-                                            </div>
-                                            <input id="contact_me-input--lang" type="hidden" name="lang" value="en">
-                                            <div class="area_data">
-                                                <div class="area_data--inner">
-                                                    <label for="message">Enter Your Message:</label>
-                                                    <!-- <input > -->
-                                                    <div class="textarea_with_a_button">
-                                                        <textarea id="contact_me-input--message" type="text" placeholder="Your Message Here" name="message"
-                                                        cols="20" rows="5" required minlength="5"></textarea>
-                                                    <button type="submit" class="contact_me--button sendMessage">Send Me A Message</button>
-                                                    <button type="submit" class="contact_me--button messageSending">Collecting the data from inputs</button>
-                                                    <button type="submit" class="contact_me--button messageSended">Message Sended</button>
-                                                    <button type="submit" class="contact_me--button messageError">Error, try again</button>
-                                                    </div>
-                                                   
-                                                </div>
-                                            </div>
-                                            <!-- <p id="error">You need to pass google captcha! </p> -->
-                                            <div class="g-recaptcha" data-sitekey="6Lf3IaEUAAAAACPqr4sd88AG_YF6g17S9-lX1CCr"></div>
-                
-                                        </form>
-                                        <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
-                                        <h3 class="contact_me_or mainColorText">Or you can find me here</h3>
-                
-                                        <div class="social_media">
-                                            <a class="social_span" target="_blank" href="https://vk.com/kolodkomaxim"><i
-                                                    class="footer_icon icon fab fa-vk"></i></a>
-                                            <a class="social_span" target="_blank" href="https://web.facebook.com/kolodko.maksim"><i
-                                                    class="footer_icon icon fab fa-facebook-f"></i></a>
-                                            <a class="social_span" target="_blank" href="https://github.com/SejimF"><i
-                                                    class="footer_icon icon fab fa-github"></i></a>
-                                            <a class="social_span" target="_blank"
-                                                href="https://www.freecodecamp.org/kolodko%20maxim"><i
-                                                    class="footer_icon fab fa-free-code-camp"></i></a>
-                
-                                        </div>
-                                    </div>
-                
+                                </div>
+                            </div>
+                            <!-- <p id="error">You need to pass google captcha! </p> -->
+                            <div class="g-recaptcha" data-sitekey="6Lf3IaEUAAAAACPqr4sd88AG_YF6g17S9-lX1CCr"></div>
+
+                        </form>
+                        <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+                        <h3 class="contact_me_or mainColorText">Or you can find me here</h3>
+
+                        <div class="social_media">
+                            <a class="social_span" target="_blank" href="https://vk.com/kolodkomaxim"><i
+                                    class="footer_icon icon fab fa-vk"></i></a>
+                            <a class="social_span" target="_blank" href="https://web.facebook.com/kolodko.maksim"><i
+                                    class="footer_icon icon fab fa-facebook-f"></i></a>
+                            <a class="social_span" target="_blank" href="https://github.com/SejimF"><i
+                                    class="footer_icon icon fab fa-github"></i></a>
+                            <a class="social_span" target="_blank"
+                                href="https://www.freecodecamp.org/kolodko%20maxim"><i
+                                    class="footer_icon fab fa-free-code-camp"></i></a>
+
+                        </div>
+                    </div>
+
                     <section>
 
             </div>
@@ -511,8 +780,50 @@
 
     </div>
 
-    <link rel="stylesheet" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            window.addEventListener("load", function (e) {
+
+                setTimeout(function () {
+
+                    var fontAwesome = document.createElement("link");
+                    fontAwesome.rel = "stylesheet";
+                    fontAwesome.integrity =
+                        "sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay";
+                    fontAwesome.href =
+                        "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+                    fontAwesome.crossOrigin = "anonymous";
+                    document.body.appendChild(fontAwesome);
+
+                    initImages();
+
+                }, 2000);
+
+function initImages() {
+
+    var imgDefer = document.getElementsByTagName('img');
+
+    
+    for (var i = 0; i < imgDefer.length; i++) {
+        
+        if (imgDefer[i].getAttribute('data-src-set')) {
+            imgDefer[i].setAttribute('srcset', imgDefer[i].getAttribute('data-src-set'));
+        }
+
+        if (imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+        }
+
+    }
+}
+
+
+            });
+
+        });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
 
@@ -527,7 +838,7 @@
     <script src="./scripts/skillsTransition.js"></script>
     <script src="./scripts/projectsTransition.js"></script>
     <script src="./scripts/contactMe.js"></script>
-    
+
     <script>
         window.onload = function () {
             indexPageAnimations("enter");

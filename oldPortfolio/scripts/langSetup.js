@@ -14,7 +14,7 @@ function getLanguage() {
     
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
     $.ajax({ 
-    url:  '/scripts/language/' +  localStorage.getItem('language') + '.json', 
+    url:  './scripts/language/' +  localStorage.getItem('language') + '.json', 
     dataType: 'json', async: false,
     success: function (lang) {
           language = lang;

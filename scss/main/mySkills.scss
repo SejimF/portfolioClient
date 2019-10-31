@@ -36,8 +36,13 @@ span.active {
     width: 100%;
     display: inherit;
     flex-direction: row;
-    justify-content: space-evenly;
+    
     margin-bottom: 3rem;
+    justify-content: space-evenly;
+    @supports(-ms-ime-align:auto) {
+        
+        justify-content: space-around;
+    }
 }
 
 .skills_state_element {

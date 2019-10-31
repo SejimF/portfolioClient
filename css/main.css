@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @keyframes flipOutX {
   from {
     transform: perspective(400px);
@@ -92,7 +93,7 @@
 nav {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: -200px;
   overflow: hidden;
@@ -149,7 +150,7 @@ nav {
   width: 40px;
   height: 20px;
   transition: transform .3s ease-in;
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(0.7);
 }
 
 .menu_bar .upper_bar {
@@ -183,7 +184,7 @@ nav {
 }
 
 .menu_bar.opened {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(0.7);
 }
 
 .menu_bar.opened .upper_bar {
@@ -514,7 +515,7 @@ html, body {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel", "Playfair Display", serif;
 }
 
 .main_container {
@@ -559,6 +560,14 @@ main {
   transition: border-color .5s ease-in;
 }
 
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   main {
     width: 95%;
@@ -570,6 +579,12 @@ main {
   }
   .inner_main {
     height: calc(90vh - 70px);
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
   }
 }
 
@@ -615,8 +630,14 @@ span.active {
   width: 100%;
   display: inherit;
   flex-direction: row;
-  justify-content: space-evenly;
   margin-bottom: 3rem;
+  justify-content: space-evenly;
+}
+
+@supports (-ms-ime-align: auto) {
+  .skill_row {
+    justify-content: space-around;
+  }
 }
 
 .skills_state_element {
@@ -873,6 +894,10 @@ h2 {
   }
 }
 
+input, button, textarea {
+  outline: none;
+}
+
 .contactMe--inner {
   height: 100%;
   width: 100vw;
@@ -992,6 +1017,7 @@ label {
   justify-content: center;
   width: 100%;
   margin-bottom: 1rem;
+  transform: matrix(1, 0, 0, 1, 0, 2000);
 }
 
 .social_span {
@@ -1013,6 +1039,10 @@ label {
 
 .g-recaptcha {
   opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 2000);
+}
+
+.contact_me_or {
   transform: matrix(1, 0, 0, 1, 0, 2000);
 }
 
@@ -1092,7 +1122,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -1115,8 +1145,8 @@ label {
   height: auto;
   min-height: 500px;
   flex-direction: column;
-  align-items: center;
-  justify-content: end;
+  align-items: flex-start;
+  justify-content: flex-start;
   background: linear-gradient(44deg, #9ECCFF, #EFD0F8);
   border-bottom: 5px solid #536E95;
   border-bottom-left-radius: 5px;
@@ -1160,9 +1190,10 @@ label {
 .project_info {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-start;
   justify-content: center;
   color: #536E95;
+  width: 100%;
 }
 
 .project_header {
@@ -1323,8 +1354,11 @@ hr {
     height: 70%;
     width: 90%;
     flex-direction: row;
-    align-items: end;
     border-bottom-left-radius: 30px;
+  }
+  .prj_techs {
+    margin-top: -3rem;
+    margin-bottom: 2rem;
   }
   .project_first_row {
     height: 100%;
@@ -1341,6 +1375,7 @@ hr {
   }
   .project_info {
     width: 100%;
+    transform: translateX(-16px) scale(1.05) translateY(10px);
   }
   .open_git_project_button {
     right: 148px;

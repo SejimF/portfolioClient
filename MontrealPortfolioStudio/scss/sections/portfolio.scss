@@ -1,0 +1,222 @@
+.portfolio {
+    height: 108.68em;
+}
+
+.portfolio_hero {
+    height: 33.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 19.8%;
+}
+
+.portfolio_info {
+    width: 100%;
+}
+
+.portfolio_header {
+    font-size: 3.125em;
+    letter-spacing: 4px;
+    line-height: 96px;
+    color: $secondaryColor;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 1.84em;
+}
+
+.portfolio_paragraph {
+    width: 87%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: $colorText;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 0.8em;
+    word-break: break-all;
+}
+
+
+.portfolio_hero-buttons {
+    padding-top: 7.3em;
+}
+
+
+.portfolio_button {
+    padding: 0.35em 2em;
+    background: transparent;
+    border: 2px solid $secondaryColor;
+    font-size: 20px;
+    letter-spacing: 2px;
+    /* line-height: 76px; */
+    color: $colorText;
+    font-family: "Abel";
+    font-weight: 400;
+    margin-right: 1em;
+
+    &:hover {
+        background: $secondaryColor;
+        color: $colorText;
+    }
+}
+
+
+.portfolio_projects {
+    overflow: hidden;
+    height: 56.2em;
+    display: grid;
+    grid-template-columns: 26% 26% 10% 12% 26%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "side-prj top-left-prj top-left-prj top-right-prj top-right-prj"
+        "side-prj bottom-left-prj bottom-middle-prj bottom-middle-prj bottom-right-prj";
+}
+
+.portfolio_project {
+    position: relative;
+}
+
+.project_overlay {
+    position: absolute;
+}
+
+.side-prj {
+    grid-area: side-prj;
+}
+
+.top-left-prj {
+    grid-area: top-left-prj;
+}
+
+.top-right-prj {
+    grid-area: top-right-prj;
+}
+
+.bottom_left_prj {
+    grid-area: bottom-left-prj;
+}
+
+.bottom_middle_prj {
+    grid-area: bottom-middle-prj;
+}
+
+.bottom_right_prj {
+    grid-area: bottom-right-prj;
+}
+
+
+.project_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $overlayColor;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+    justify-content: space-around;
+
+    transition: all .2s ease-in;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    @supports(justify-content: space-evenly) {
+        justify-content: space-evenly;
+    }
+    
+}
+
+.project_name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 96px;
+    color: $colorText;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-left: 2.7em;
+}
+
+.project_paragraph {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: $thirdColorText;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-left: 4.05em;
+}
+
+.project_button {
+    width: 174px;
+    height: 45px;
+    background: transparent;
+    border: 3px solid $thirdColorText;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: $colorText;
+    font-family: "Abel";
+    font-weight: 400;
+    margin-left: 4.05em;
+    transition: all .2s ease-in;
+
+    &:hover {
+        background: $thirdColorText;
+    }
+}
+
+.portfolio_prj_button {
+    height: 70px;
+    width: 368px;
+    color: $colorText;
+    margin: auto;
+    margin-top: 7em;
+    
+}
+
+.img_hight {
+    height: 100%;
+    width: 100%;
+    background: center / cover no-repeat;
+}
+
+// .img_hight {
+//     &__image-container {
+//      width: auto; // the same width and height as for the <img>
+//      height: 100%;
+//      &.compat-object-fit {
+//       background-size: cover;
+//       background-position: center center;
+//       .img_hight__featured-image { // hide image if object fit is not supported - opacity to 0 for the link area
+//        opacity: 0;
+//       }
+//      }
+//     }
+//     &__featured-image {
+//      width: auto;
+//      height: 100%;
+//      object-fit: cover;
+//     }
+//    }
+
+
+//    .img_width {
+//     &__image-container {
+//      width: 100%; // the same width and height as for the <img>
+//      height: auto;
+//      &.compat-object-fit {
+//       background-size: cover;
+//       background-position: center center;
+//       .img_width__featured-image { // hide image if object fit is not supported - opacity to 0 for the link area
+//        opacity: 0;
+//       }
+//      }
+//     }
+//     &__featured-image {
+//      width: 100%;
+//      height: auto;
+//      object-fit: cover;
+//     }
+//    }

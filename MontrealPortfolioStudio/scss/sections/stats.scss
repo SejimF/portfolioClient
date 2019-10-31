@@ -1,0 +1,44 @@
+.stats {
+    height: 24.98em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 18.55%;
+    background: $mainColor;
+
+
+
+}
+
+.stat_fields {
+    display: flex;
+    height: 214px;
+    width: 98%;
+    justify-content: space-around;
+}
+
+.stats_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 293px;
+}
+
+.stat_number {
+    font-size: 60px;
+    color: $thirdColorText;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 0.8em;
+}
+
+.stat_name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 76px;
+    color: $secondaryColor;
+    font-family: "Abel";
+    font-weight: 400;
+    padding-top: 0.664em;
+}

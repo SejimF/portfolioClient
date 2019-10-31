@@ -26,7 +26,7 @@ function setPercentage(canvasClass, procentId, percentage, colorStroke, colorEmp
             c.clearRect(0, 0, can.width, can.height);
             procent = deegres / oneProcent;
 
-            spanProcent.innerHTML = procent.toFixed();
+            // spanProcent.innerHTML = procent.toFixed();
 
             c.beginPath();
             c.arc(posX, posY, can.width / 3, (Math.PI / 180) * 270, (Math.PI / 180) * (270 + 360));

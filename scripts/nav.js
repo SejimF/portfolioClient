@@ -36,3 +36,9 @@ function changeDropShadow (element) {
 
     $(".nav_list_mobile").toggleClass("opened");
 }
+
+
+function redirectToPage(id) {
+        location.href = "./"+ id + ".html";
+}
+

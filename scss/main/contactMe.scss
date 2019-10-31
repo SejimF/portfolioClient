@@ -1,3 +1,7 @@
+input, button, textarea {
+    outline: none;
+}
+
 .contactMe--inner {
     height: 100%;
     width: 100vw;
@@ -124,6 +128,7 @@ label {
     justify-content: center;
     width: 100%;
     margin-bottom: 1rem;
+    transform: matrix(1, 0, 0, 1, 0, 2000);
 }
 
 .social_span {
@@ -149,6 +154,9 @@ label {
     transform: matrix(1, 0, 0, 1, 0, 2000);
 }
 
+.contact_me_or {
+    transform: matrix(1, 0, 0, 1, 0, 2000);
+}
 
 @include for-desktop-up-1200 {
 

@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compileMain": "node-sass --watch --output-style=expanded --source-map=true scss/main.scss css/main.css"
+    "aboveFoldCompile": "node-sass --watch --output-style=expanded --source-map=true scss/aboveFold.scss css/aboveFold.css",
+    "compileMain": "node-sass --watch --output-style=expanded --source-map=true scss/main.scss css/main.css",
+
+    "minifyCss": "cleancss --level=1 --source-map --source-map-inline-sources --output css/main-pref.min.css css/main-pref.css",
+
+    "prefixStyles": "postcss css/main.css  --use=autoprefixer --map=false --output=css/main-pref.css",
+    "prefixAndMinify" : "npm run prefixStyles && npm run minifyCss"
   },
   "keywords": [
     "portfolio",

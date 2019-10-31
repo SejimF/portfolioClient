@@ -1,0 +1,31 @@
+.contact_us-info {
+    display: flex;
+    height: 20em;
+    background: $secondaryColor;
+}
+
+.contact_us-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+}
+
+.contact_us-info_field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+        width: 120px;
+    }
+}
+
+.contact_us_info-img {
+    width: 80px;
+    height: 80px;
+    background: black;
+    margin-right: 1.5em;
+}

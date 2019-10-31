@@ -4,7 +4,14 @@
 function moveToSelected(elementSelected, swipe) {
 
     var pageExiting = $(".currentPage");
+
+    if (pageExiting[0].id === elementSelected.id) {
+        return;
+    }
+
     cunterPage = pageExiting;
+
+
 
     if (elementSelected === "next") {
         var current = $(".currentPage").next(".page");
@@ -13,6 +20,9 @@ function moveToSelected(elementSelected, swipe) {
     } else {
         var current = elementSelected;
     }
+
+    
+    
 
     if (current.index && current.index() < 0) {
         return;
@@ -449,7 +459,7 @@ function projectsPageAnimations(state) {
 }
 
 // ContactMe transition
-const contactMeEllements = document.querySelectorAll(".input_data, .area_data, .g-recaptcha");
+const contactMeEllements = document.querySelectorAll(".input_data, .area_data, .g-recaptcha, .contact_me_or, .social_media");
 
 var contactMeTimeline = new TimelineMax({paused: true});
 
@@ -459,6 +469,11 @@ var timeLineInputHeader = animationForInputsEnter(document.getElementsByClassNam
     timeLineInputSubject = animationForInputsEnter(contactMeEllements[2]),
     timeLineInputMessage = animationForInputsEnter(contactMeEllements[3]),
     timeLineInputCaptcha = animationForInputsEnter(contactMeEllements[4]);
+    timeLineInputheaderOr = animationForInputsEnter(contactMeEllements[5]);
+    timeLineInputSocialButtons = animationForInputsEnter(contactMeEllements[6]);
+
+    // console.log(contactMeEllements);
+    
 
 contactMeTimeline.add(timeLineInputHeader)
     .add(timeLineInputName, .1)
@@ -466,6 +481,8 @@ contactMeTimeline.add(timeLineInputHeader)
     .add(timeLineInputSubject, .3)
     .add(timeLineInputMessage, .4)
     .add(timeLineInputCaptcha, .5)
+    .add(timeLineInputheaderOr, .5)
+    .add(timeLineInputSocialButtons, .5);
 
 function contactMePageAnimations(state) {
 
